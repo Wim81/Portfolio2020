@@ -1,0 +1,323 @@
+.form {
+  background: $grey-very-light;
+  padding: 3rem 2rem;
+
+  label,
+  input,
+  textarea,
+  select {
+    width: 100%;
+    background-color: $white-50;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: auto;
+  }
+
+  input[type="checkbox"] + label {
+    width: auto;
+  }
+
+  input:-internal-autofill-selected {
+    background-color: $white-50 !important;  // override browser default
+  }
+
+  label {
+    background-color: transparent;
+    margin-bottom: 0;
+    font-size: $font-size-form-label;
+    text-transform: uppercase;
+    transition: $transition-base;
+
+    &.label-select {
+      pointer-events: none;
+    }
+  }
+
+  input {
+    border: 1px solid $grey-medium;
+    margin-bottom: 1rem;
+
+    &::placeholder {
+      color: $grey-light;
+    }
+
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"],
+    &[type="password"] {
+      padding: 0.5rem 1rem;
+
+      &:focus {
+        outline: none;
+        box-shadow: $box-shadow-standard;
+      }
+    }
+
+    &[type="checkbox"] {
+      visibility: hidden;
+
+      + label {
+        text-transform: none;
+        font-size: $font-size-base;
+        position: relative;
+        padding-left: 0.5rem;
+
+        &:before {
+          content: '\f0c8';
+          font-family: $font-awesome;
+          font-size: 14px;
+          display: inline-block;
+          position: absolute;
+          left: -1rem;
+          top: 0.2rem;
+        }
+
+        &.checked:before {
+          content: '\f14a';
+        }
+      }
+    }
+
+    &[type="file"] {
+      position: absolute;
+      left: -99999rem;
+    }
+  }
+
+  textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+
+    &::placeholder {
+      color: $grey-light;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: $box-shadow-standard;
+    }
+  }
+
+  .select-wrapper {
+    position: relative;
+
+    // selectize classes
+    .selectize-control {
+      margin-bottom: 1rem;
+
+      .selectize-input {
+        padding: 0;
+        border-radius: 0;
+
+        &:after {
+          content: '\f107';
+          font-family: $font-awesome;
+          font-weight: bold;
+          display: inline-block;
+          pointer-events: none;
+          top: 1rem;
+          right: 1rem;
+          color: $grey-dark;
+          transition: $transition-standard;
+          border-style: none;
+          border-width: 0;
+          border-color: transparent;
+          width: 0.5rem;
+          height: 1rem;
+        }
+
+        &.dropdown-active:after {
+          transform: rotate(-180deg);
+        }
+
+        .item {
+          padding: 0.5rem 1rem;
+          width: 100%;
+          font-size: $font-size-base;
+          line-height: $line-height-base;
+          color: $grey-dark;
+
+          &[data-value='0'] {
+            color: $grey-light;
+          }
+        }
+
+        input {
+          display: none !important;  // plugin overwrite
+        }
+      }
+
+      .selectize-dropdown {
+        border-radius: 0;
+
+        &-content {
+
+          .option {
+            padding: 0.5rem 1rem;
+
+            &.active {
+              background-color: $primary;
+              color: $white;
+            }
+
+            &:not([data-selectable]) {
+              background-color: $grey-very-light;
+              color: $primary;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+    // end of selectize classes
+  }
+
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    input {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .file-input-wrapper {
+    width: 100%;
+
+    &-btn {
+      border: 1px solid $grey-medium;
+      margin-bottom: 1rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: $grey-light;
+      transition: $transition-standard;
+
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        background-color: $primary;
+      }
+    }
+
+    &-filename {
+      margin-left: 0.5rem;
+      text-transform: none;
+    }
+  }
+
+
+  &-inverted {
+    background-color: $primary;
+
+    label,
+    input,
+    textarea,
+    select {
+      color: $white;
+    }
+
+    .select-wrapper:after {
+      color: $white;
+    }
+
+    option {
+      background-color: $primary;
+    }
+
+    .radio-group-item {
+      color: $white;
+    }
+
+    .file-input-wrapper-btn {
+      color: $primary;
+      background-color: $white;
+      border: 1px solid $white;
+
+      &:hover {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+
+  &.label-switch-form {
+    label {
+      opacity: 0;
+    }
+  }
+
+
+  &.form-cta {
+    padding: 0;
+
+    .form-label {
+      color: $white;
+      display: none;
+    }
+
+    .form-input {
+      width: 100%;
+      border: 1px solid transparent;
+      background-color: $form-input-bg-color;
+      color: $white;
+      padding: 10px 20px;
+
+      &::placeholder {
+        color: $grey-very-light;
+      }
+
+      &:focus {
+        border: 1px solid $form-input-border-color;
+        box-shadow: $box-shadow-standard;
+      }
+    }
+  }
+}
+
+/* search form */
+header .search-form {
+
+  &-input {
+    margin-right: 24px;
+    padding: 0;
+    border: 1px solid $grey-medium;
+    height: 100%;
+    width: 0;
+    transition: $transition-search-form-width;
+
+    &.input-visible {
+      width: 250px;
+      padding: 0px 10px;
+    }
+
+    &::placeholder {
+      color: $grey-medium;
+    }
+
+    &-mobile {
+      margin-right: 0;
+      margin-left: 24px;
+
+      &.input-visible {
+        width: 150px;
+
+        @media (min-width: 480px) {
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  &-submit {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+// theme internal use only
+.wv-theme {
+
+  &-separator {
+    width: 100%;
+    height: 1px;
+    background-color: $grey-light;
+  }
+}
+

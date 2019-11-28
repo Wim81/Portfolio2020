@@ -1,0 +1,49 @@
+{
+  "name": "wv_base_theme",
+  "version": "1.0.0",
+  "description": "Wim Verpoorten's personal front-end base theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wim81/WV_base_theme.git"
+  },
+  "author": "Wim Verpoorten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wim81/WV_base_theme/issues"
+  },
+  "homepage": "https://github.com/Wim81/WV_base_theme#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "countup.js": "^2.0.4",
+    "hamburgers": "^1.1.3",
+    "jquery": "^3.4.1",
+    "sass": "^1.22.9",
+    "selectize": "^0.12.6",
+    "simplelightbox": "^1.17.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@fortawesome/fontawesome-free": "^5.10.1",
+    "autoprefixer": "^9.6.1",
+    "babel-polyfill": "^6.26.0",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-jslint": "^1.0.10",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1"
+  }
+}
