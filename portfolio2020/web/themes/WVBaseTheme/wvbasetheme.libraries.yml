@@ -1,7 +1,7 @@
 global-styling:
   version: 1.x
   css:
-    style:
+    layout:
       dist/css/style.css: { media: screen }
 global-scripts:
   version: 1.x
