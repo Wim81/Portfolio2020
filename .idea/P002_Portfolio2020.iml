@@ -22,6 +22,7 @@
           <root url="phar://$MODULE_DIR$/portfolio2020/web/core/modules/simpletest/files/phar-1.phar/" />
           <root url="phar://$MODULE_DIR$/portfolio2020/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
           <root url="phar://$MODULE_DIR$/portfolio2020/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/portfolio2020/vendor/bin/drush.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/portfolio2020/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
@@ -29,6 +30,7 @@
           <root url="phar://$MODULE_DIR$/portfolio2020/web/core/modules/simpletest/files/phar-1.phar/" />
           <root url="phar://$MODULE_DIR$/portfolio2020/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
           <root url="phar://$MODULE_DIR$/portfolio2020/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/portfolio2020/vendor/bin/drush.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
