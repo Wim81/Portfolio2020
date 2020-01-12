@@ -8,14 +8,6 @@
     color: $secondary;
   }
 
-  &-white {
-    color: $white;
-
-    &:hover {
-      color: $white-50;
-    }
-  }
-
   &-arrow:after {
     content: '\f30b';
     display: inline-block;

@@ -33,19 +33,4 @@
       transition: $transition-standard;
     }
   }
-
-  &-alt {
-
-    a {
-      color: $social-item-alt-color;
-
-      i {
-        font-size: $social-item-alt-size;
-      }
-
-      &:hover {
-        color: $social-item-alt-hover-color;
-      }
-    }
-  }
 }

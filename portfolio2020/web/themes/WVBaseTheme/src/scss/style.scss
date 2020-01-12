@@ -23,18 +23,11 @@
 
 /*  PAGE PARTS  */
 @import "./custom/page-parts/pp_cta";                                     // Call to action block
-@import "./custom/page-parts/pp_facts";                                   // Facts block with animated numbers
-@import "./custom/page-parts/pp_image_gallery";                           // Image gallery with interactive modal (modal can be disabled if wanted)
 @import "./custom/page-parts/pp_quote";                                   // Quote block
 @import "./custom/page-parts/pp_slider_images";                           // Collection of images with slider functionality
-@import "./custom/page-parts/pp_slider_testimonials";                     // Testimonial block with slider functionality
-@import "./custom/page-parts/pp_steps";                                   // Steps block, shows parts of a process
 @import "./custom/page-parts/pp_text";                                    // Text block, just one column
 @import "./custom/page-parts/pp_text_image";                              // Text & image block
 @import "./custom/page-parts/pp_text_text";                               // Text block, two columns
-@import "./custom/page-parts/pp_text_video";                              // Text & video block
-@import "./custom/page-parts/pp_top_image";                               // Top image incl. title & subtitle
-@import "./custom/page-parts/pp_usp";                                     // USP block, quickly summarizing USP's or something similar
 /*  END OF PAGE PARTS  */
 
 /*  OTHER PARTIALS  */
@@ -42,14 +35,12 @@
 @import "./custom/partials/footer";                                       // footer
 @import "./custom/partials/navigation";                                   // navigation & links
 @import "./custom/partials/social";                                       // social links
-@import "./custom/partials/breadcrumbs";                                  // breadcrumbs
 @import "./custom/partials/pagination";                                   // pagination
-@import "./custom/partials/teasers";                                      // teasers
 @import "./custom/partials/buttons";                                      // buttons
 @import "./custom/partials/form";                                         // forms
 @import "./custom/partials/slider";                                       // slider
 @import "./custom/partials/hamburgers";                                   // animated hamburgers
-@import "./custom/partials/modal";                                        // modal
-@import "./custom/partials/landing-page";                                 // landing page
 @import "./custom/partials/utility";                                      // custom utility classes
+@import "./custom/partials/work";                                         // content type work
+@import "./custom/partials/blog";                                         // content type blog
 /*  END OF OTHER PARTIALS  */

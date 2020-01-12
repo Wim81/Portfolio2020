@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen:700|Raleway:400,400i,700|Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
 /*
 *
 * THEME VARIABLES
@@ -10,142 +10,90 @@
 
 /* COLOURS */
 
-$primary:                       #5E419A;                     // default
-$secondary:                     #B31B0B;                     // default
+$primary:                       #0066ff;
+$secondary:                     #ffaa00;
 
-$black:                         #000000;                     // default
-$white:                         #FFFFFF;                     // default
-$offwhite:                      #F8F8F8;                     // default
+$black:                         #111111;
+$white:                         #FFFFFF;
 
-$grey-dark:                     #333333;                     // default
-$grey-medium:                   #999999;                     // default
-$grey-light:                    #CCCCCC;                     // default
-$grey-very-light:               #EEEEEE;                     // default
+$grey:                          #6a6a6a;
+$grey-overlay:                  rgba(99, 99, 99, 0.25);      // #636363 met opacity 0.25
 
-$white-50:                      rgba($white, 0.5);           // default
+$body-bg:                       $black;
 
-$box-shadow-color:              rgba(#000000,0.2);           // default
-$separator-color:               $grey-medium;                // default
-$form-input-border-color:       $white;                      // default
-$form-input-bg-color:           $white-50;                   // default
+$header-background-color:       red;  // to do
+$footer-background-color:       red;  // to do
 
-$primary-overlay:               rgba($primary, 0.25);        // default
-$primary-overlay-dark:          rgba($primary, 0.5);         // default
-$primary-overlay-light:         rgba($primary, 0.1);         // default
-$secondary-overlay:             rgba($secondary, 0.25);      // default
-$secondary-overlay-dark:        rgba($secondary, 0.5);       // default
-$secondary-overlay-light:       rgba($secondary, 0.1);       // default
-
-$header-background-color:       $offwhite;                   // default
-$footer-background-color:       $offwhite;                   // default
-$header-large-background-color: $header-background-color;    // default
-
-
+$secondary-overlay:             #ffaa00;
 
 /* FONTS */
 
 @font-face {
-  font-family: 'Clock Font';
-  src: url('../../../font/clock-font-italic.ttf');
+  font-family: 'Renogare';
+  src: url('../../../font/renogare.otf');
 }
 
-$font-text:                     'Raleway', sans-serif;               // default
-$font-titles:                   'Oxygen', sans-serif;                // default
-$font-quote:                    'Italianno', cursive;                // default
-$font-awesome:                  'Font Awesome 5 Free', sans-serif;   // leave as is
-$font-clock:                    'Clock Font', monospace;             // default
+$font-text:                     'Varela', sans-serif;
+$font-titles:                   'Renogare', sans-serif;
+$font-quote:                    'Varela', cursive;                // to do
+$font-awesome:                  'Font Awesome 5 Free', sans-serif;
 
 // base styles for standard text & plus/min styles for small variations
 
-$font-size-base:                1rem;  // default
-$line-height-base:              1.6;  // default
-$line-height-header:            1.4;
-$line-height-tight:             1.2;
+$font-size-base:                1rem;
+$line-height-base:              1.6;
 
-$font-size-base-min:            $font-size-base * 0.875;  // default
-$line-height-base-min:          $line-height-base *0.875; // default
+$font-size-base-min:            0.8rem;     // to do
+$line-height-base-min:          1.4;        // to do
 
-$font-size-base-plus:           $font-size-base * 1.125;  // default
-$line-height-base-plus:         $line-height-base;        // default
+$font-size-base-plus:           1.2rem;     // to do
+$line-height-base-plus:         1.6;        // to do
 
-$font-size-breadcrumb:          $font-size-base * 0.75;   // default
-$font-size-breadcrumb-separator:  $font-size-base * 0.67; // default
+// $font-size-form-label:          $font-size-base * 0.75;   // default
+// $font-size-teaser1-label:       $font-size-base * 0.75;   // default
 
-$font-size-form-label:          $font-size-base * 0.75;   // default
-$font-size-teaser1-label:       $font-size-base * 0.75;   // default
-
-$font-size-quote-text:          5rem;                   // default
-$font-size-quote-text-mobile:   3rem;                   // default
-$line-height-quote-text:        4rem;                   // default
-$line-height-quote-text-mobile: 2.5rem;                 // default
-$font-size-quote-source:        $font-size-base-min;    // default
-
-$font-size-fact-number-mobile:  3rem;                   //default
-$font-size-fact-number-desktop: 5rem;                   //default
-$font-size-fact-prefix-suffix-mobile:  1.5rem;          //default
-$font-size-fact-prefix-suffix-desktop: 2rem;            //default
+$font-size-quote-text:          5rem;                   // to do
+$font-size-quote-text-mobile:   3rem;                   // to do
+$line-height-quote-text:        4rem;                   // to do
+$line-height-quote-text-mobile: 2.5rem;                 // to do
 
 // header styles
 
-$font-size-h0:                  $font-size-base * 3;    // default
-$font-size-h0-mobile:           $font-size-base * 2;    // default
-$line-height-h0:                $line-height-header;    // default
+// $font-size-h0:                  $font-size-base * 3;    // default
+// $font-size-h0-mobile:           $font-size-base * 2;    // default
+// $line-height-h0:                $line-height-header;    // default
 
-$font-size-h0-secondary:        $font-size-base * 1.8;  // default
-$font-size-h0-secondary-mobile: $font-size-base * 1.4;  // default
-$line-height-h0-secondary:      $line-height-header;    // default
+// $font-size-h0-secondary:        $font-size-base * 1.8;  // default
+// $font-size-h0-secondary-mobile: $font-size-base * 1.4;  // default
+// $line-height-h0-secondary:      $line-height-header;    // default
 
-$font-size-h1:                  $font-size-base * 2.5;  // default
-$font-size-h1-mobile:           $font-size-base * 1.8;  // default
-$line-height-h1:                $line-height-header;    // default
+$font-size-h1:                  20px;  // to do
+$font-size-h1-mobile:           16px;  // to do
+$line-height-h1:                $line-height-base;    // to do
 
-$font-size-h1-secondary:        $font-size-base * 1.5;  // default
-$font-size-h1-secondary-mobile: $font-size-base * 1.2;  // default
-$line-height-h1-secondary:      $line-height-header;    // default
+$font-size-h2:                  20px;  // to do
+$font-size-h2-mobile:           16px;  // to do
+$line-height-h2:                $line-height-base;    // to do
 
-$font-size-h2:                  $font-size-base * 2.2;  // default
-$font-size-h2-mobile:           $font-size-base * 1.8;  // default
-$line-height-h2:                $line-height-header;    // default
-
-$font-size-h3:                  $font-size-base * 2;    // default
-$font-size-h3-mobile:           $font-size-base * 1.6;  // default
-$line-height-h3:                $line-height-header;    // default
-
-$font-size-h4:                  $font-size-base * 1.8;  // default
-$font-size-h4-mobile:           $font-size-base * 1.4;  // default
-$line-height-h4:                $line-height-header;    // default
-
-$font-size-h5:                  $font-size-base * 1.5;  // default
-$font-size-h5-mobile:           $font-size-base * 1.2;  // default
-$line-height-h5:                $line-height-header;    // default
-
-$font-size-h6:                  $font-size-base * 1.2;  // default
-$font-size-h6-mobile:           $font-size-base * 1;    // default
-$line-height-h6:                $line-height-header;    // default
+$font-size-h3:                  20px;  // to do
+$font-size-h3-mobile:           16px;  // to do
+$line-height-h3:                $line-height-base;    // to do
 
 // font-weights
 
-$weight-light:                  300;  // default
-$weight-regular:                400;  // default
-$weight-bold:                   700;  // default
+$weight-regular:                400;
+$weight-bold:                   700;
 
 
 /* BUTTONS */
 
-$button-padding:                0.5rem 1rem;  // default
-$button-border-radius:          0rem;         // default
+$button-padding:                0.5rem 1rem;  // to do
 
 
 /* TRANSITION */
 
-$transition-standard:           all 0.3s ease-in-out;                             // default
-$transition-flipcard:           all 0.7s ease-in-out;                             // default
-$transition-search-form-width:  width .5s ease-in-out,padding .5s ease-in-out;    // default
+$transition-standard:           all 0.3s ease-in-out;
 
-
-/* BOX SHADOW */
-
-$box-shadow-standard: 0 2px 4px 0 $box-shadow-color;         // default
 
 /* SPACING */
 $spacer: 1rem;
@@ -153,34 +101,25 @@ $spacers: ();
 $spacers: map-merge(
 (
         0: 0,
-        1: ($spacer * .25),
-        2: ($spacer * .5),
-        3: $spacer,
-        4: ($spacer * 1.5),
-        5: ($spacer * 3),
-        6: ($spacer * 4),
-        7: ($spacer * 5),
-        8: ($spacer * 6.25),
-        9: ($spacer * 7.5),
-        10: ($spacer * 9.375)
+        1: 0.5rem,
+        2: 1rem,
+        3: 1.5rem,
+        4: 2rem,
+        5: 2.5rem,
+        6: 3rem,
+        7: 3.5rem,
+        8: 4rem,
+        9: 4.5rem,
+        10: 5rem
 ),
  $spacers);
 
 /* SLIDER */
 
-$slider-dot-size:           10px;                           // default
+$slider-dot-size:           10px;                           // to do
 
-/* LANDING PAGE SIDEBAR */
-
-$landingpage-sidebar-padding: 3rem 4rem;                    // default
-$landingpage-sidebar-padding-narrow: 3rem 2rem;             // default
-$landingpage-indent: -10rem;                                // default
 
 /* SOCIAL BLOCK */
-$social-item-size: 1.4rem;                                  // default
-$social-item-color: $grey-medium;                           // default
-$social-item-hover-color: $primary;                         // default
-
-$social-item-alt-size: 1rem;                                // default
-$social-item-alt-color: $primary;                           // default
-$social-item-alt-hover-color: $grey-medium;                 // default
+$social-item-size: 1.4rem;                                  // to do
+$social-item-color: $grey;                                  // to do
+$social-item-hover-color: $primary;                         // to do

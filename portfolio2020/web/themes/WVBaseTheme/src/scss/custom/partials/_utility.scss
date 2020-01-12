@@ -2,46 +2,8 @@
 
 .bg {
 
-  &-grey {
-
-    &-very-light {
-      background-color: $grey-very-light;
-    }
-
-    &-light {
-      background-color: $grey-light;
-    }
-
-    &-medium {
-      background-color: $grey-medium;
-
-      p,
-      span {
-        color: $white;
-      }
-    }
-
-    &-dark {
-      background-color: $grey-dark;
-
-      p,
-      span {
-        color: $white;
-      }
-    }
-  }
-
   &-primary {
     background-color: $primary;
-
-    p,
-    span {
-      color: $white;
-    }
-  }
-
-  &-secondary {
-    background-color: $secondary;
 
     p,
     span {
@@ -69,8 +31,8 @@
     left: 0;
   }
 
-  &-primary:after {
-    background-color: $primary-overlay-dark;
+  &-secondary:after {
+    background-color: $secondary-overlay;
   }
 
   h1, h2, h3, h4, h5, h6, div, span, p, em, strong, a, input {

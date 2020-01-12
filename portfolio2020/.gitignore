@@ -22,3 +22,7 @@
 
 # Ignore .env files as they are personal
 /.env
+
+/web/themes/WVBaseTheme/src-orig
+/web/themes/WVBaseTheme/dist
+/web/themes/WVBaseTheme/node-modules

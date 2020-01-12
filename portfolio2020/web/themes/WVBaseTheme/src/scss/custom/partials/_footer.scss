@@ -25,10 +25,10 @@
 
       li {
         margin-bottom: 0.5rem;
-        color: $grey-medium;
+        color: $grey;
 
         a.footer-link {
-          color: $grey-medium;
+          color: $grey;
           transition: $transition-standard;
 
           &:hover {
@@ -56,7 +56,7 @@
 
       li {
         font-size: $font-size-base-min;
-        color: $grey-medium;
+        color: $grey;
         padding-bottom: 0.5rem;
       }
     }
@@ -83,12 +83,12 @@
           content: '|';
           display: inline-block;
           margin-left: 1rem;
-          color: $grey-medium;
+          color: $grey;
         }
       }
 
       a {
-        color: $grey-medium;
+        color: $grey;
 
         &:hover {
           text-decoration: none;
