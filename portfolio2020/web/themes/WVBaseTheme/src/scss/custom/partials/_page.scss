@@ -1,0 +1,23 @@
+.top_image {
+  z-index: 0;  /* mixin source map fix */
+  @include full-width;
+  position: relative;
+  height: 48.9vw;
+
+  &-inner {
+    height: 100%;
+    @include bg-img;
+    filter: grayscale(100%);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: $secondary-overlay;
+    z-index: 9;
+  }
+}
