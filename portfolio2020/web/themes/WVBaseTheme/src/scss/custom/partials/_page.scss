@@ -1,4 +1,4 @@
-.top_image {
+.top-image {
   z-index: 0;  /* mixin source map fix */
   @include full-width;
   position: relative;
@@ -10,5 +10,12 @@
     @include bg-img;
     background-color: $secondary;
     background-blend-mode: multiply;
+  }
+}
+
+.intro-section {
+
+  &-title {
+
   }
 }

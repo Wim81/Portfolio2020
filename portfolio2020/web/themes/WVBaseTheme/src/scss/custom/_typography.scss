@@ -54,18 +54,52 @@ text.h1 {
   }
 }
 
+.h2-wrapper {
+  position: relative;
+  text-align: center;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 13px;
+    height: 5px;
+    width: 100%;
+    background-color: $primary;
+    z-index: -2;
+  }
+}
+
 h2, .h2 {
   z-index: 0;  /* mixin source map fix */
-  @include font($font-titles, $font-size-h2-mobile, $line-height-h2, $weight-bold);
+  @include font($font-titles, $font-size-h2-mobile, $line-height-h2, $weight-regular);
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: inline-block;
 
   @media (min-width: 768px) {
     font-size: $font-size-h2;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: $black;
+    width: 100%;
+    height: 10px;
+    z-index: -1;
   }
 }
 
 h3, .h3 {
   z-index: 0;  /* mixin source map fix */
-  @include font($font-titles, $font-size-h3-mobile, $line-height-h3, $weight-bold);
+  @include font($font-titles, $font-size-h3-mobile, $line-height-h3, $weight-regular);
+  text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: $font-size-h3;
