@@ -24,11 +24,13 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  top: -1.2rem;
+
+  @media (min-width: 480px) {
+    font-size: $font-size-h1-tablet;
+  }
 
   @media (min-width: 768px) {
     font-size: $font-size-h1;
-    top: -4.4rem;
   }
 }
 
@@ -47,6 +49,11 @@ text.h1 {
   paint-order: stroke fill;
   text-anchor: middle;
   stroke-linejoin: round;
+
+  @media (min-width: 480px) {
+    font-size: $font-size-h1-tablet;
+    stroke-width: 7px;
+  }
 
   @media (min-width: 768px) {
     font-size: $font-size-h1;
@@ -108,7 +115,11 @@ h3, .h3 {
 
 p {
   z-index: 0;  /* mixin source map fix */
-  @include font($font-text, $font-size-base, $line-height-base, $weight-regular, $grey);
+  @include font($font-text, $font-size-base-mobile, $line-height-base, $weight-regular, $grey);
+
+  @media (min-width: 768px) {
+    font-size: $font-size-base;
+  }
 }
 
 p.base-plus {
