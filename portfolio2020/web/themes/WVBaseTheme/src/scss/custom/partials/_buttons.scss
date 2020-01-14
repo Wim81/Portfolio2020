@@ -1,10 +1,23 @@
 .btn {
   padding: $button-padding;
+  border-radius: 0;
+  border-width: 2px;
 
   &-primary {
+    color: $primary;
+    text-transform: uppercase;
+    font-family: $font-titles;
+    font-size: $font-size-base-plus;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(to left, $primary 50%, $black 50%);
+    background-size: 200% 100%;
+    background-position-x: 0%;
 
     &:hover {
-
+      background-position-x: -100%;
+      color: $black-75;
+      border-color: $primary;
     }
   }
 }
