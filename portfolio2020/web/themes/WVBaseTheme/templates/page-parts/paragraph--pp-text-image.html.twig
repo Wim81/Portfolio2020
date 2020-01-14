@@ -1,0 +1,21 @@
+{% if "Image Left" in content.field_pp_textimage_img_location.0['#markup'] %}
+    <div class="pp_text_image reverse">
+{% else %}
+    <div class="pp_text_image">
+{% endif %}
+        <div class="container">
+            <div class="row pp_text_image-inner">
+                <div class="col-md-6 pb-5 pt-1">
+                    {% if content.field_pp_textimage_text_title.0 %}
+                        <h3>{{ content.field_pp_textimage_text_title.0 }}</h3>
+                    {% endif %}
+                    {{ content.field_pp_textimage_text.0 }}
+                </div>
+                <div class="col-md-6 pb-5">
+                    <div class="pp_text_image-img">
+                        {{ content.field_pp_textimage_img.0 }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

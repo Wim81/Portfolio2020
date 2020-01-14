@@ -1,4 +1,9 @@
 .pp_text_image {
+  margin-bottom: 2rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 5rem;
+  }
 
   &-inner {
 
@@ -8,9 +13,18 @@
         order: 3;
       }
     }
+
+    &:not(.reverse) {
+      @media (max-width: 768px) {
+        div:first-of-type {
+          order: 3;
+        }
+      }
+    }
   }
 
-  &-img {
+  &-img img {
     width: 100%;
+    height: auto;
   }
 }
