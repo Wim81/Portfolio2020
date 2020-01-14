@@ -13,6 +13,28 @@
   }
 }
 
+.top-tags {
+  position: relative;
+  top: -2rem;
+  text-align: center;
+
+  .top-tag {
+    display: inline-block;
+    background-color: $secondary-50;
+    color: $secondary;
+    font-family: $font-titles;
+    font-size: $font-size-base-min;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: -0.35rem;
+
+    &:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 .intro-section {
 
   &-title {

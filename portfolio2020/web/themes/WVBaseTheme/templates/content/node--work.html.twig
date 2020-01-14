@@ -88,7 +88,19 @@
         </div>
     </div>
 
-
+    <div class="top-tags mb-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    {% for key, tag in content.field_tags %}
+                        {% if key matches '/^\\d+$/' %}   {# integers only #}
+                            <span class="top-tag">{{ tag['#title'] }}</span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="intro-section mb-10">
         <div class="container">
