@@ -2,8 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  top: -8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     justify-content: flex-start;
 
     li:first-of-type a {
@@ -25,7 +27,6 @@
 
     i {
       font-size: $social-item-size;
-
     }
 
     &:hover {
