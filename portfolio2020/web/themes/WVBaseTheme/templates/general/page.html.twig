@@ -46,9 +46,7 @@
 <div class="page">
 
     {% if page.header %}
-        <header>
-            {{ page.header }}
-        </header>
+        {% include '@wvbasetheme/general/header.html.twig' ignore missing %}
     {% endif %}
 
     <main role="main">
@@ -60,9 +58,7 @@
     </main>
 
     {% if page.footer %}
-        <footer>
-            {{ page.footer }}
-        </footer>
+        {% include '@wvbasetheme/general/footer.html.twig' ignore missing %}
     {% endif %}
 
 </div>{# /.layout-container #}

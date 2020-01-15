@@ -1,4 +1,32 @@
 .footer {
+  background-color: $grey-overlay;
+  color: $grey;
+
+  &-top {
+
+    &-left {
+
+    }
+
+    &-mid {
+
+    }
+
+    &-right {
+
+    }
+  }
+
+  &-bottom {
+    font-family: $font-text;
+    font-size: 0.8rem;
+    text-align: right;
+    border-top: 1px solid $black;
+    padding: 0.8rem 0;
+  }
+}
+
+  /*
   background-color: $footer-background-color;
   border-top: 1px solid $primary;
 
@@ -139,3 +167,4 @@
     }
   }
 }
+  */
