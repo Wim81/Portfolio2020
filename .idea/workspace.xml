@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef68cb2c-2c6e-4deb-91af-166fac84d18f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/img/logo-wv-white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_footer.scss" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/footer.html.twig" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/footer.html.twig" />
     </list>
@@ -45,10 +46,10 @@
       <file leaf-file-name="footer.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/footer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+            <state relative-caret-position="405">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
-                <element signature="e#2077#2083#0#HTML" expanded="true" />
+                <element signature="e#2165#2171#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_footer.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -152,8 +153,8 @@
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/header.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/page.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/footer.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/footer.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_footer.scss" />
       </list>
     </option>
@@ -758,12 +759,12 @@
       <workItem from="1578831207574" duration="16937000" />
       <workItem from="1578941814257" duration="5075000" />
       <workItem from="1579024341935" duration="8848000" />
-      <workItem from="1579106481567" duration="9870000" />
+      <workItem from="1579106481567" duration="10825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60715000" />
+    <option name="totallyTimeSpent" value="61670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1552" height="850" extended-state="6" />
@@ -1162,10 +1163,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/general/footer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="39" column="55" lean-forward="false" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        <state relative-caret-position="405">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="e#2077#2083#0#HTML" expanded="true" />
+            <element signature="e#2165#2171#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1173,7 +1174,7 @@
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>

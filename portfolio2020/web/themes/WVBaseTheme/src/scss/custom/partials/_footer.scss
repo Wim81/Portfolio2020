@@ -11,6 +11,21 @@
 
     &-left {
 
+      &-logo {
+        text-align: center;
+
+        @media (min-width: 576px) {
+          text-align: left;
+        }
+
+        img {
+          width: 150px;
+          height: auto;
+          opacity: 0.5;
+          position: relative;
+          top: -12px;
+        }
+      }
     }
 
     &-mid {
