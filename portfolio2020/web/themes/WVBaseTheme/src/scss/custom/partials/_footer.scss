@@ -3,6 +3,11 @@
   color: $grey;
 
   &-top {
+    padding-top: 4rem;
+
+    &-section {
+      padding-bottom: 2.5rem;
+    }
 
     &-left {
 
@@ -14,6 +19,35 @@
 
     &-right {
 
+    }
+  }
+
+  &-menu {
+    text-align: center;
+
+    @media (min-width: 576px) {
+      text-align: left;
+    }
+
+    &-label {
+      font-family: $font-titles;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    &-item {
+      font-family: $font-text;
+      margin-bottom: 0.2rem;
+    }
+
+    &-link {
+      color: $grey;
+      transition: $transition-standard;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary;
+      }
     }
   }
 

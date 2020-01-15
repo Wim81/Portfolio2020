@@ -1,4 +1,9 @@
-$(document).ready( function() {
+jQuery(document).ready( function($) {
+
+    /* huidig jaartal in footer */
+    var thisDate = new Date();
+    var thisYear = thisDate.getFullYear();
+    $("#current_year").html(thisYear);
 
     // pp_slider_testimonial slider action
     $(".pp_slider_testimonial-wrapper").slick({
