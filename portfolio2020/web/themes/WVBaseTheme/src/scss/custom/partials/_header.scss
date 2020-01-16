@@ -13,21 +13,6 @@ header {
       &:focus {
         outline: none;
       }
-
-      &-icon {
-
-        &:before {
-          content: "\f00d";
-          font-family: $font-awesome;
-          font-weight: 900;
-        }
-      }
-
-      &[aria-expanded="false"] {
-        .navbar-toggler-icon:before {
-          content:"\f0c9";
-        }
-      }
     }
 
     .nav-item {
@@ -44,26 +29,39 @@ header {
 
       &:not(:last-of-type) {
         @media (min-width: 992px) {
-          margin-right: 1rem;
+          margin-right: 2rem;
         }
       }
 
       &.active {
-        font-weight: $weight-bold;
+        a.nav-link {
+          color: $primary;
+        }
 
         @media (min-width: 992px) {
           border-bottom: 5px solid $primary;
         }
       }
 
-      a {
+      &:hover {
+        @media (min-width: 992px) {
+          border-bottom: 5px solid $secondary;
+        }
+
+        a.nav-link {
+          color: $secondary;
+        }
+      }
+
+      a.nav-link {
         transform: translateY(3px);
         width: 100%;
         text-align: center;
-
-        &:hover {
-          color: $secondary;
-        }
+        font-family: $font-titles;
+        text-transform: uppercase;
+        color: $grey;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }
