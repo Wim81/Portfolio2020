@@ -1,12 +1,11 @@
 header {
   background-color: $header-background-color;
-  border-bottom: 1px solid $primary;
 
   .navbar {
     padding: 0;
 
     &-brand {
-      margin: 20px 0px;
+      margin: 10px 0px;
     }
 
     &-toggler {

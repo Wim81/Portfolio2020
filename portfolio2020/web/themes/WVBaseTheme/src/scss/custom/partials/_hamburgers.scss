@@ -8,17 +8,50 @@
 .hamburger-inner,
 .hamburger-inner:before,
 .hamburger-inner:after {
-  width: 20px;
+  width: 25px;
+  border-radius: 0;
 }
 
 /* hamburger color */
-.hamburger-inner,
-.hamburger-inner:before,
-.hamburger-inner:after,
-.hamburger.is-active .hamburger-inner:before,
-.hamburger.is-active .hamburger-inner:after {
-  background-color: $primary;
+.hamburger--spring {
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after,
+  &.is-active .hamburger-inner:before,
+  &.is-active .hamburger-inner:after {
+    background-color: $primary;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner:before,
+  .hamburger-inner:after {
+    transition: background-color 0.3s ease-in-out,
+                top .1s cubic-bezier(.33333,0,.66667,.33333) .15s,
+                -webkit-transform .13s cubic-bezier(.215,.61,.355,1) .22s;
+  }
+
+  &.is-active .hamburger-inner {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &.is-active .hamburger-inner:before,
+  &.is-active .hamburger-inner:after {
+    transition: background-color 0.3s ease-in-out,
+    top .1s cubic-bezier(.33333,0,.66667,.33333) .15s,
+    -webkit-transform .13s cubic-bezier(.215,.61,.355,1) .22s;
+  }
+
+  &:hover {
+    .hamburger-inner,
+    .hamburger-inner:before,
+    .hamburger-inner:after,
+    &.is-active .hamburger-inner:before,
+    &.is-active .hamburger-inner:after {
+      background-color: $secondary;
+    }
+  }
 }
+
 
 /* reposition the middle and lower bar
    (will always be specific for each variation, change the first classname accordingly) */
@@ -27,11 +60,11 @@
   .hamburger-inner {
 
     &:before {
-      top: 7px;
+      top: 8px;
     }
 
     &:after {
-      top: 14px;
+      top: 16px;
     }
   }
 }
