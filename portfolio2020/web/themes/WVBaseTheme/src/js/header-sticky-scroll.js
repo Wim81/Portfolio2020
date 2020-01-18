@@ -13,7 +13,7 @@ jQuery(document).ready( function($) {
 
     // since we will position the header fixed, we need to add the (calculated) height of it as padding-top to the next element so it does not collapse
     var elementAfterHeader = $(".header-sticky-scroll").next();
-    elementAfterHeader.css("padding-top", navbarHeight);
+    // elementAfterHeader.css("padding-top", navbarHeight);
 
     // let's make sure the class for hiding the header has the correct height as well
     $(".nav-up").css("top", navbarHeightMinus);
@@ -64,7 +64,7 @@ jQuery(document).ready( function($) {
         var navbarHeight = $("header").outerHeight();
         var navbarHeightMinus = 0 - navbarHeight;
         var elementAfterHeader = $("header").next();
-        elementAfterHeader.css("padding-top", navbarHeight);
+        // elementAfterHeader.css("padding-top", navbarHeight);
     });
 
 });
