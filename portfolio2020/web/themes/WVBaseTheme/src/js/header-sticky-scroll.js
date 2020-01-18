@@ -2,7 +2,7 @@
 // in order to apply the script below
 // which will make the header appear on scroll-up
 
-$(document).ready( function() {
+jQuery(document).ready( function($) {
 
     // variables
     var lastScrollTop = 0;
