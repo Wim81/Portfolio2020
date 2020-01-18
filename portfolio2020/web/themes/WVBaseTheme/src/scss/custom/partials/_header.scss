@@ -18,6 +18,7 @@ header {
     .nav-item {
       box-sizing: border-box;
       border-bottom: 5px solid transparent;
+      transition: $transition-standard;
 
       &:last-of-type {
         margin-bottom: 1rem;
@@ -62,6 +63,7 @@ header {
         color: $grey;
         padding-left: 0;
         padding-right: 0;
+        transition: $transition-standard;
       }
     }
   }
