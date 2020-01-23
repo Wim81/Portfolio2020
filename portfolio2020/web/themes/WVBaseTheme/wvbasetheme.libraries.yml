@@ -11,7 +11,6 @@ global-scripts:
     node_modules/selectize/dist/js/standalone/selectize.min.js: {}
     node_modules/selectize/dist/js/standalone/selectize.js: {}
     node_modules/bootstrap/dist/js/bootstrap.js: {}
-    dist/js/countup.js: {}
     dist/js/script.js: {}
     dist/js/header-sticky-scroll.js: {}
   dependencies:
