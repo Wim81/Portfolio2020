@@ -1,0 +1,33 @@
+.work-teaser {
+
+  &:hover {
+    text-decoration: none;
+
+    .work-teaser-image-inner {
+      transform: scale(1.1);
+    }
+  }
+
+  &-inner {
+    background-color: $grey-overlay;
+    transition: $transition-standard;
+
+    &:hover {
+      background-color: $primary-25;
+    }
+  }
+
+  &-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+
+    &-inner {
+      height: 100%;
+      @include bg-img;
+      background-color: $secondary;
+      background-blend-mode: multiply;
+      transition: $transition-standard;
+    }
+  }
+}
