@@ -1,13 +1,12 @@
-<div class="col-md 6 col-lg-4 mb-4">
+<div class="col-sm-6 col-lg-4 mb-4">
     <a href="{{ url }}" class="work-teaser">
         <div class="work-teaser-inner h-100 text-center">
             <div class="work-teaser-image">
-                <div class="work-teaser-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})">
-                    <p>{{ node.title.value }}</p>
-                </div>
+                <div class="work-teaser-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})"></div>
             </div>
+            <p >{{ node.title.value }}</p>
             <div class="work-teaser-description">{{ content.field_teaser_text.0 }}</div>
-            <p class="work-teaser-linktext">Check it out</p>
+            <h3 class="work-teaser-linktext">Check it out</h3>
         </div>
     </a>
 </div>
