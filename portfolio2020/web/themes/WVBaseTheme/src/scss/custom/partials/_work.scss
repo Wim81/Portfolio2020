@@ -26,7 +26,11 @@
   &-image {
     position: relative;
     height: 180px;
-    overflow: hidden;
+
+    &-outer {
+      height: 100%;
+      overflow: hidden;
+    }
 
     &-inner {
       height: 100%;
@@ -34,6 +38,12 @@
       background-color: $secondary;
       background-blend-mode: multiply;
       transition: $transition-standard;
+    }
+
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -44,6 +54,7 @@
 
   &-description {
     flex: 1 1 auto;
+    padding-top: 3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 

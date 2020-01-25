@@ -61,6 +61,27 @@ text.h1 {
   }
 }
 
+text.work-teaser {
+  @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
+  text-transform: uppercase;
+  fill: $primary;
+  stroke: $black;
+  stroke-width: 5px;
+  paint-order: stroke fill;
+  text-anchor: middle;
+  stroke-linejoin: round;
+
+  @media (min-width: 480px) {
+    font-size: $font-size-teaser-title-tablet;
+    stroke-width: 6px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $font-size-teaser-title;
+    stroke-width: 7px;
+  }
+}
+
 .h2-wrapper {
   position: relative;
   text-align: center;
