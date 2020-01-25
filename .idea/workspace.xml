@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef68cb2c-2c6e-4deb-91af-166fac84d18f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_work.scss" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_work.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +34,7 @@
       <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="459">
               <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
               <folding />
             </state>
@@ -64,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="node--work--teaser.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node--work--teaser.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="405">
               <caret line="15" column="84" lean-forward="false" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
@@ -79,8 +76,20 @@
       <file leaf-file-name="node--work.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="86" column="18" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="86" selection-end-column="18" />
+            <state relative-caret-position="619">
+              <caret line="136" column="6" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="136" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node--article.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -111,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/page-parts/_pp_quote.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_form.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_pagination.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_slider.scss" />
@@ -162,6 +170,7 @@
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig" />
       </list>
     </option>
   </component>
@@ -680,12 +689,12 @@
       <workItem from="1579710776406" duration="7422000" />
       <workItem from="1579802513013" duration="8167000" />
       <workItem from="1579891558932" duration="2854000" />
-      <workItem from="1579966086883" duration="3465000" />
+      <workItem from="1579966086883" duration="4527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105044000" />
+    <option name="totallyTimeSpent" value="106106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1552" height="850" extended-state="6" />
@@ -721,13 +730,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/wv_views.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10959">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_utility.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1022,16 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="86" column="18" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="86" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_work.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1050,7 +1042,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="459">
           <caret line="80" column="19" lean-forward="false" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
           <folding />
         </state>
@@ -1058,10 +1050,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="405">
           <caret line="15" column="84" lean-forward="false" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="136" column="6" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="136" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
