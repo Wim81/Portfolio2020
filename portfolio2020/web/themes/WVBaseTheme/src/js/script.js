@@ -34,12 +34,6 @@ jQuery(document).ready( function($) {
         }
     });
 
-    /* form select arrow movement on click */
-    /*$("form .select-wrapper").on("click", function(e) {
-       $(this).toggleClass("open");
-       console.log(e.target);
-    });*/
-
     /* form checkbox toggle */
     $("form .label-checkbox").on("click", function() {
        $(this).toggleClass("checked");
@@ -47,7 +41,7 @@ jQuery(document).ready( function($) {
 
     // form custom select box with selectize.js
     $(".form-select").selectize({
-        create:  false
+        create: false
     });
 
     /* form show file name uploaded file */
@@ -62,22 +56,45 @@ jQuery(document).ready( function($) {
         $(this).toggleClass("is-active");
     });
 
-    // resize menu reset
-    /*$(window).on('resize', function() {
-        $(".navbar-toggler").attr("aria-expanded", false); // will reset classic Bootstrap burger menu
-        $(".navbar-toggler").removeClass("is-active"); // will reset custom animated burger menu
-        $(".primary-menu-level2").removeClass("open"); // close all 2nd level menus
-        $(".primary-menu-level3").removeClass("open"); // close all 3rd level menus
-        $(".has-level2").removeClass("open"); // reset handle which opens 2nd level menus
-        $(".has-level3").removeClass("open"); // reset handle which opens 3rd level menus
-        $(".collapse").removeClass("show"); // close 1st level menu
-    });
+    /***************************
+     * TITLE FIX
+     **************************/
 
-    // large header desktop menu reset when clicking search
-    $(".desktop-menu-search-logo").on("click", function() {
-        $(".primary-menu-level2").removeClass("open"); // close all 2nd level menus
-        $(".primary-menu-level3").removeClass("open"); // close all 3rd level menus
-        $(".has-level2").removeClass("open"); // reset handle which opens 2nd level menus
-        $(".has-level3").removeClass("open"); // reset handle which opens 3rd level menus
-    });*/
+    var content = $(".textcontent").html();
+    // console.log(content);
+
+    var content_slices = content.split("\n");
+    // console.log(content_slices);
+
+    var testr = document.getElementById('textcontent');
+    // console.log(testr);
+
+    function first_line(element) {
+        var el = document.getElementById(element);
+        var cache = el.innerHTML;
+        var text = el.innerHTML;
+        el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
+        var arr = text.split(" ");
+        for (var i = 0; i < arr.length; i++) {
+            text = text.substring(0, text.lastIndexOf(" "));
+            if (el.offsetHeight == initial) {
+                var temp = el.innerHTML;
+                el.innerHTML = cache;
+                return temp;
+            }
+            el.innerHTML = text;
+        }
+    }
+
+    function get_first_line() {
+        var content_slice1 = first_line('textcontent');
+        console.log(content_slice1);
+    }
+
+    get_first_line();
+    $(window).resize( get_first_line );
+
+    /***************************
+     * end of TITLE FIX
+     **************************/
 });
