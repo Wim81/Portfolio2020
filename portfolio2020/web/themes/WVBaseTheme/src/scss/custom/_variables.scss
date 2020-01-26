@@ -37,9 +37,14 @@ $secondary-overlay:             $secondary-50;
   src: url('../../../font/renogare.otf');
 }
 
+@font-face {
+  font-family: 'Garamond Pro Italic';
+  src: url('../../../font/garamond_pro_italic.ttf');
+}
+
 $font-text:                     'Varela', sans-serif;
 $font-titles:                   'Renogare', sans-serif;
-$font-quote:                    'Varela', cursive;                // to do
+$font-quote:                    'Garamond Pro Italic', serif;
 $font-awesome:                  'Font Awesome 5 Free', sans-serif;
 
 // base styles for standard text & plus/min styles for small variations
@@ -57,10 +62,10 @@ $line-height-base-plus:         1.6;        // to do
 // $font-size-form-label:          $font-size-base * 0.75;   // default
 // $font-size-teaser1-label:       $font-size-base * 0.75;   // default
 
-$font-size-quote-text:          5rem;                   // to do
-$font-size-quote-text-mobile:   3rem;                   // to do
-$line-height-quote-text:        4rem;                   // to do
-$line-height-quote-text-mobile: 2.5rem;                 // to do
+$font-size-quote-text:          2.6rem;
+$font-size-quote-text-mobile:   1.8rem;
+$line-height-quote-text:        2.6rem;
+$line-height-quote-text-mobile: 1.8rem;
 
 // header styles
 

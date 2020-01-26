@@ -1,17 +1,22 @@
 .pp_quote {
 
   &-inner {
+    text-align: right;
 
     &:before,
     &:after {
       content:'';
-      display: block;
+      display: inline-block;
       width: 100px;
-      border-top: 1px solid $primary;
+      border-top: 3px solid $primary;
     }
 
     &:before {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
+
+      @media (min-width: 768px) {
+        margin-bottom: 2.2rem;
+      }
     }
 
     &:after {
@@ -19,11 +24,14 @@
     }
   }
 
-  &-text {
+  &-text p {
     font-family: $font-quote;
+    font-style: italic;
     font-size: $font-size-quote-text-mobile;
     line-height: $line-height-quote-text-mobile;
     quotes: "“" "”" "‘" "’";
+    color: $primary;
+    text-align: right;
 
     @media (min-width: 768px) {
       font-size: $font-size-quote-text;
@@ -34,14 +42,15 @@
       content: open-quote;
       font-family: $font-text;
       display: inline-block;
-      color: $primary;
+      color: $secondary;
+      margin-right: 0.5rem;
     }
 
     &:after {
       content: close-quote;
       font-family: $font-text;
       position: absolute;
-      color: $primary;
+      color: $secondary;
     }
   }
 }
