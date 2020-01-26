@@ -38,7 +38,9 @@ h1 {
 }
 
 svg {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 999;
   overflow: visible;
 }
@@ -58,7 +60,7 @@ text.h1 {
     stroke-width: 7px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     font-size: $font-size-h1;
     stroke-width: 13px;
   }

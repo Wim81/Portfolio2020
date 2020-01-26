@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef68cb2c-2c6e-4deb-91af-166fac84d18f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +25,7 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2214">
+            <state relative-caret-position="1971">
               <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
               <folding />
             </state>
@@ -34,28 +35,28 @@
       <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="567">
+              <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="node--work.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="node--work.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="83" column="30" lean-forward="true" selection-start-line="80" selection-start-column="24" selection-end-line="83" selection-end-column="30" />
+            <state relative-caret-position="81">
+              <caret line="78" column="38" lean-forward="false" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="91" column="40" lean-forward="false" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+            <state relative-caret-position="434">
+              <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -133,8 +134,8 @@
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-quote.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig" />
       </list>
     </option>
   </component>
@@ -710,12 +711,12 @@
       <workItem from="1579802513013" duration="8167000" />
       <workItem from="1579891558932" duration="2854000" />
       <workItem from="1579966086883" duration="4683000" />
-      <workItem from="1580035066076" duration="9558000" />
+      <workItem from="1580035066076" duration="9944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115820000" />
+    <option name="totallyTimeSpent" value="116206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1552" height="850" extended-state="6" />
@@ -1069,34 +1070,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="434">
+          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2214">
+        <state relative-caret-position="1971">
           <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="83" column="30" lean-forward="true" selection-start-line="80" selection-start-column="24" selection-end-line="83" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="91" column="40" lean-forward="false" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+        <state relative-caret-position="81">
+          <caret line="78" column="38" lean-forward="false" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
           <folding />
         </state>
       </provider>
