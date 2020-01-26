@@ -13,9 +13,15 @@
   }
 }
 
+.textcontent-wrapper {
+  margin-bottom: 2rem;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .top-tags {
-  position: relative;
-  top: -2rem;
   text-align: center;
 
   .top-tag {

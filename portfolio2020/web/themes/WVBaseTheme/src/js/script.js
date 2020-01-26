@@ -90,8 +90,9 @@ jQuery(document).ready( function($) {
         var content_slice1 = first_line('textcontent');
         console.log(content_slice1);
         $(".title-first-line").remove();
-
-        if (matchMedia('(max-width: 1199px)').matches) {
+        if (matchMedia('(max-width: 342px)').matches) {
+            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='14%'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+        } else if (matchMedia('(max-width: 1199px)').matches) {
             var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='18%'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
         } else {
             var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='13%'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
