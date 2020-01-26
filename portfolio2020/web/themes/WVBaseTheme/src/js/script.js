@@ -89,6 +89,9 @@ jQuery(document).ready( function($) {
     function get_first_line() {
         var content_slice1 = first_line('textcontent');
         console.log(content_slice1);
+        $(".title-first-line").remove();
+        var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='104%'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+        $(".node-title-wrapper").append(svgElement);
     }
 
     get_first_line();
