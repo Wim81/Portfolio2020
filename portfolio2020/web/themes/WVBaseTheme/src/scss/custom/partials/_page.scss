@@ -15,9 +15,15 @@
 
 .textcontent-wrapper {
   margin-bottom: 2rem;
+  position: relative;
+  top: -1rem;
+
+  @media (min-width: 480px) {
+    top: -1.5rem;
+  }
 
   @media (min-width: 1200px) {
-    margin-bottom: 0;
+    top: -3.8rem;
   }
 }
 
