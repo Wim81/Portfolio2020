@@ -34,9 +34,9 @@ h1 {
     top: 0.4rem;
   }
 
-  &:first-line {
+  /*&:first-line {
     color: transparent;
-  }
+  }*/
 }
 
 svg {
@@ -65,6 +65,22 @@ text.h1 {
   @media (min-width: 1200px) {
     font-size: $font-size-h1;
     stroke-width: 13px;
+  }
+}
+
+p.work-teaser {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: 480px) {
+    font-size: $font-size-teaser-title-tablet;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: $font-size-teaser-title;
   }
 }
 

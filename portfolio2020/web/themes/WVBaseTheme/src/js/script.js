@@ -57,7 +57,7 @@ jQuery(document).ready( function($) {
     });
 
     /***************************
-     * TITLE FIX
+     * TITLE FIX PAGE TITLE
      **************************/
 
     var content = $(".textcontent").html();
@@ -66,11 +66,9 @@ jQuery(document).ready( function($) {
     var content_slices = content.split("\n");
     // console.log(content_slices);
 
-    var testr = document.getElementById('textcontent');
-    // console.log(testr);
-
     function first_line(element) {
         var el = document.getElementById(element);
+        console.log("el van de node title = " + el);
         var cache = el.innerHTML;
         var text = el.innerHTML;
         el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
@@ -88,7 +86,6 @@ jQuery(document).ready( function($) {
 
     function get_first_line() {
         var content_slice1 = first_line('textcontent');
-        console.log(content_slice1);
         $(".title-first-line").remove();
         if (matchMedia('(max-width: 480px)').matches) {
             var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='25' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
@@ -104,6 +101,59 @@ jQuery(document).ready( function($) {
     $(window).resize( get_first_line );
 
     /***************************
-     * end of TITLE FIX
+     * end of TITLE FIX PAGE TITLE
      **************************/
+
+
+    /***************************
+     * TITLE FIX WORK TEASER
+     **************************/
+
+    $(".work-teaser").each( function(index) {
+        var content_teaser = $(this).find(".work-teaser-textcontent").html();
+        console.log(content_teaser);
+
+        var content_slices_teaser = content_teaser.split("\n");
+        console.log(content_slices_teaser);
+        console.log(index);
+
+        function first_line_work_teaser(index) {
+            var el = document.getElementsByClassName("work-teaser-textcontent")[index];
+            var cache = el.innerHTML;
+            var text = el.innerHTML;
+            el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
+            var arr = text.split(" ");
+            for (var i = 0; i < arr.length; i++) {
+                text = text.substring(0, text.lastIndexOf(" "));
+                if (el.offsetHeight == initial) {
+                    var temp = el.innerHTML;
+                    el.innerHTML = cache;
+                    return temp;
+                }
+                el.innerHTML = text;
+            }
+        }
+
+        var self = $(this);
+
+        function get_first_line_work_teaser(index) {
+            var content_slice1_teaser = first_line_work_teaser(index);
+            console.log("brrrr" + content_slice1_teaser);
+            self.find(".title-first-line_teaser").remove();
+            var idThis = "teaser" + index;
+            var idThisPlus = "#" + idThis;
+
+            var svgElement_teaser = "<svg class='title-first-line_teaser' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id=idThis x='50%' y='86' text-anchor='middle'>" + content_slice1_teaser + "</text><use xlink:href=idThisPlus /></svg>";
+
+            self.find(".teaser-title-wrapper").append(svgElement_teaser);
+        }
+
+        get_first_line_work_teaser(index);
+
+    } );
+
+    /***************************
+     * end of TITLE FIX PWORK TEASER
+     **************************/
+
 });
