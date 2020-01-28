@@ -34,12 +34,6 @@ jQuery(document).ready( function($) {
         }
     });
 
-    /* form select arrow movement on click */
-    /*$("form .select-wrapper").on("click", function(e) {
-       $(this).toggleClass("open");
-       console.log(e.target);
-    });*/
-
     /* form checkbox toggle */
     $("form .label-checkbox").on("click", function() {
        $(this).toggleClass("checked");
@@ -47,7 +41,7 @@ jQuery(document).ready( function($) {
 
     // form custom select box with selectize.js
     $(".form-select").selectize({
-        create:  false
+        create: false
     });
 
     /* form show file name uploaded file */
@@ -62,22 +56,105 @@ jQuery(document).ready( function($) {
         $(this).toggleClass("is-active");
     });
 
-    // resize menu reset
-    /*$(window).on('resize', function() {
-        $(".navbar-toggler").attr("aria-expanded", false); // will reset classic Bootstrap burger menu
-        $(".navbar-toggler").removeClass("is-active"); // will reset custom animated burger menu
-        $(".primary-menu-level2").removeClass("open"); // close all 2nd level menus
-        $(".primary-menu-level3").removeClass("open"); // close all 3rd level menus
-        $(".has-level2").removeClass("open"); // reset handle which opens 2nd level menus
-        $(".has-level3").removeClass("open"); // reset handle which opens 3rd level menus
-        $(".collapse").removeClass("show"); // close 1st level menu
+    /***************************
+     * TITLE FIX PAGE TITLE
+     **************************/
+
+    var content = $(".textcontent").html();
+    // console.log(content);
+
+    var content_slices = content.split("\n");
+    // console.log(content_slices);
+
+    function first_line(element) {
+        var el = document.getElementById(element);
+        var cache = el.innerHTML;
+        var text = el.innerHTML;
+        el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
+        var arr = text.split(" ");
+        for (var i = 0; i < arr.length; i++) {
+            text = text.substring(0, text.lastIndexOf(" "));
+            if (el.offsetHeight == initial) {
+                var temp = el.innerHTML;
+                el.innerHTML = cache;
+                return temp;
+            }
+            el.innerHTML = text;
+        }
+    }
+
+    function get_first_line() {
+        var content_slice1 = first_line('textcontent');
+        $(".title-first-line").remove();
+        if (matchMedia('(max-width: 480px)').matches) {
+            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='25' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+        } else if (matchMedia('(max-width: 1199px)').matches) {
+            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='38' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+        } else {
+            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='86' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+        }
+        $(".node-title-wrapper").append(svgElement);
+    }
+
+    get_first_line();
+    $(window).resize( get_first_line );
+
+    /***************************
+     * end of TITLE FIX PAGE TITLE
+     **************************/
+
+
+    /***************************
+     * TITLE FIX WORK TEASER
+     **************************/
+
+    $(".work-teaser").each( function(index) {
+        var content_teaser = $(this).find(".work-teaser-textcontent").html();
+        // console.log(content_teaser);
+
+        var content_slices_teaser = content_teaser.split("\n");
+        // console.log(content_slices_teaser);
+        // console.log(index);
+
+        function first_line_work_teaser(index) {
+            var el = document.getElementsByClassName("work-teaser-textcontent")[index];
+            // console.log("el = " + el);
+            var cache = el.innerHTML;
+            var text = el.innerHTML;
+            el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
+            var arr = text.split(" ");
+            for (var i = 0; i < arr.length; i++) {
+                text = text.substring(0, text.lastIndexOf(" "));
+                if (el.offsetHeight == initial) {
+                    var temp = el.innerHTML;
+                    el.innerHTML = cache;
+                    return temp;
+                }
+                el.innerHTML = text;
+            }
+        }
+
+        var self = $(this);
+
+        function get_first_line_work_teaser(index) {
+            var content_slice1_teaser = first_line_work_teaser(index);
+            // console.log("brrrr" + content_slice1_teaser);
+            self.find(".title-first-line_teaser").remove();
+            var idThis = "teaser" + index;
+            var idThisPlus = "#" + idThis;
+
+            var svgElement_teaser = "<svg class='title-first-line_teaser' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='work-teaser' id=" + idThis + " x='50%' y='86' text-anchor='middle'>" + content_slice1_teaser + "</text><use xlink:href=" + idThisPlus + " /></svg>";
+
+            self.find(".work-teaser-title-wrapper").append(svgElement_teaser);
+        }
+
+        get_first_line_work_teaser(index);
     });
 
-    // large header desktop menu reset when clicking search
-    $(".desktop-menu-search-logo").on("click", function() {
-        $(".primary-menu-level2").removeClass("open"); // close all 2nd level menus
-        $(".primary-menu-level3").removeClass("open"); // close all 3rd level menus
-        $(".has-level2").removeClass("open"); // reset handle which opens 2nd level menus
-        $(".has-level3").removeClass("open"); // reset handle which opens 3rd level menus
-    });*/
+
+
+    /***************************
+     * end of TITLE FIX WORK TEASER
+     **************************/
+
 });

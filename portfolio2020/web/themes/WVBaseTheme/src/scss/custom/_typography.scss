@@ -29,15 +29,27 @@ h1 {
     font-size: $font-size-h1-tablet;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     font-size: $font-size-h1;
+    top: 0.4rem;
   }
+
+  /*&:first-line {
+    color: transparent;
+  }*/
 }
 
 svg {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 999;
   overflow: visible;
+}
+
+svg.title-first-line_teaser {
+  width: calc(100% - 30px);
+  left: 15px;
 }
 
 text.h1 {
@@ -55,9 +67,25 @@ text.h1 {
     stroke-width: 7px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     font-size: $font-size-h1;
     stroke-width: 13px;
+  }
+}
+
+p.work-teaser-textcontent {
+  z-index: 0;  /* mixin source map fix */
+  @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: 480px) {
+    font-size: $font-size-teaser-title-tablet;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: $font-size-teaser-title;
   }
 }
 

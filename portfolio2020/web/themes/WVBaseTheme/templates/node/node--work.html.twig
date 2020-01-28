@@ -73,17 +73,18 @@
 
 <div class="node--work">
 
-    <div class="top-image mb-14">
+    <div class="top-image">
         <div class="top-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})">
             <div class="container h100">
                 <div class="row h100">
-                    <div class="col-md-8 offset-md-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                            <text class="h1" id="lift" x="50%" y="104%">{{ node.title.value }}</text>
-                            <use id="use" xlink:href="#lift" />
-                        </svg>
-                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container textcontent-wrapper">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 node-title-wrapper">
+                <h1 class="textcontent" id="textcontent">{{ node.title.value }}</h1>
             </div>
         </div>
     </div>

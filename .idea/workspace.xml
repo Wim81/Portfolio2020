@@ -5,6 +5,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article--teaser.html.twig" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/views/views-view--blog-teasers.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" afterPath="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,14 +28,41 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="node--work.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1321">
               <caret line="117" column="34" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="34" />
+=======
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2187">
+              <caret line="81" column="14" lean-forward="false" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="node--work--teaser.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="151" column="7" lean-forward="true" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
+>>>>>>> title_fix
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="node--work--teaser.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,11 +80,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="837">
               <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+=======
+      <file leaf-file-name="_page.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_page.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+>>>>>>> title_fix
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="views-view--blog-teasers.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/views/views-view--blog-teasers.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,6 +112,23 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+=======
+      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-785">
+              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2133">
+              <caret line="79" column="33" lean-forward="false" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+>>>>>>> title_fix
               <folding />
             </state>
           </provider>
@@ -93,6 +149,11 @@
       <find>social</find>
       <find>d3</find>
       <find>&quot;d3</find>
+<<<<<<< HEAD
+=======
+      <find>wrapper</find>
+      <find>h1</find>
+>>>>>>> title_fix
       <find>split</find>
     </findStrings>
   </component>
@@ -103,7 +164,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/portfolio2020/web/sites/default/settings.local.php" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_page.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-text-image.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/page-parts/_pp_text_image.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-text-text.html.twig" />
@@ -134,25 +194,29 @@
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/testrrr.html" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/svg-fix.js" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/wvbasetheme.libraries.yml" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/package.json" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--page.html.twig" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-view.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/views/views-view--work-teasers.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_work.scss" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/style.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/page-parts/_pp_image.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-image.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-text.html.twig" />
-        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/page-parts/_pp_quote.scss" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-quote.html.twig" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/views/views-view--blog-teasers.html.twig" />
         <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article--teaser.html.twig" />
+=======
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_page.scss" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--page.html.twig" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss" />
+        <option value="$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js" />
+>>>>>>> title_fix
       </list>
     </option>
   </component>
@@ -569,6 +633,51 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
+=======
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P002_Portfolio2020" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P002_Portfolio2020" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolio2020" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WVBaseTheme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+>>>>>>> title_fix
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -728,12 +837,18 @@
       <workItem from="1579802513013" duration="8167000" />
       <workItem from="1579891558932" duration="2854000" />
       <workItem from="1579966086883" duration="4683000" />
-      <workItem from="1580035066076" duration="4735000" />
+      <workItem from="1580035066076" duration="13989000" />
+      <workItem from="1580144795303" duration="11951000" />
+      <workItem from="1580233997243" duration="3880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="111868000" />
+=======
+    <option name="totallyTimeSpent" value="136082000" />
+>>>>>>> title_fix
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1552" height="850" extended-state="6" />
@@ -769,6 +884,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src-orig/scss/custom/partials/_hamburgers.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> title_fix
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_hamburgers.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -955,10 +1080,21 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/views/views-view--work-teasers.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> title_fix
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_work.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+<<<<<<< HEAD
         </state>
       </provider>
     </entry>
@@ -967,6 +1103,8 @@
         <state relative-caret-position="486">
           <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
+=======
+>>>>>>> title_fix
         </state>
       </provider>
     </entry>
@@ -1016,11 +1154,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="62" />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/page-parts/_pp_quote.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/page-parts/paragraph--pp-quote.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/partials/_page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+>>>>>>> title_fix
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--article.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="25">
           <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
         </state>
@@ -1045,25 +1216,48 @@
         <state relative-caret-position="-1055">
           <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding />
+=======
+        <state relative-caret-position="432">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+>>>>>>> title_fix
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="27">
+=======
+        <state relative-caret-position="2133">
+>>>>>>> title_fix
           <caret line="79" column="33" lean-forward="false" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/views/views-view--work-teasers.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+=======
+    <entry file="file://$USER_HOME$/Desktop/testrrr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2187">
+          <caret line="81" column="14" lean-forward="false" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+>>>>>>> title_fix
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1078,20 +1272,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
           <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+=======
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/scss/custom/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-785">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+>>>>>>> title_fix
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1321">
           <caret line="117" column="34" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="34" />
+=======
+    <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/templates/node/node--work--teaser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+>>>>>>> title_fix
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio2020/web/themes/WVBaseTheme/src/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="488">
           <caret line="73" column="7" lean-forward="false" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
           <folding>
@@ -1116,6 +1324,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+=======
+        <state relative-caret-position="557">
+          <caret line="151" column="7" lean-forward="true" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="7" />
+>>>>>>> title_fix
           <folding />
         </state>
       </provider>
