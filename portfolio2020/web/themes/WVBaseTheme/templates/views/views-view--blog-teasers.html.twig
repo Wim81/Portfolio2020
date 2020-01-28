@@ -1,0 +1,11 @@
+{% set blog_items = rows.0['#rows'] %}
+
+<div class="view-work">
+    <div class="container">
+        <div class="row">
+            {% for blog_item in blog_items %}
+                {{ blog_item }}
+            {% endfor %}
+        </div>
+    </div>
+</div>
