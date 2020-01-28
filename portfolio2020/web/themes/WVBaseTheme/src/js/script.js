@@ -68,7 +68,6 @@ jQuery(document).ready( function($) {
 
     function first_line(element) {
         var el = document.getElementById(element);
-        console.log("el van de node title = " + el);
         var cache = el.innerHTML;
         var text = el.innerHTML;
         el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
@@ -111,14 +110,15 @@ jQuery(document).ready( function($) {
 
     $(".work-teaser").each( function(index) {
         var content_teaser = $(this).find(".work-teaser-textcontent").html();
-        console.log(content_teaser);
+        // console.log(content_teaser);
 
         var content_slices_teaser = content_teaser.split("\n");
-        console.log(content_slices_teaser);
-        console.log(index);
+        // console.log(content_slices_teaser);
+        // console.log(index);
 
         function first_line_work_teaser(index) {
             var el = document.getElementsByClassName("work-teaser-textcontent")[index];
+            // console.log("el = " + el);
             var cache = el.innerHTML;
             var text = el.innerHTML;
             el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
@@ -138,22 +138,23 @@ jQuery(document).ready( function($) {
 
         function get_first_line_work_teaser(index) {
             var content_slice1_teaser = first_line_work_teaser(index);
-            console.log("brrrr" + content_slice1_teaser);
+            // console.log("brrrr" + content_slice1_teaser);
             self.find(".title-first-line_teaser").remove();
             var idThis = "teaser" + index;
             var idThisPlus = "#" + idThis;
 
-            var svgElement_teaser = "<svg class='title-first-line_teaser' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id=idThis x='50%' y='86' text-anchor='middle'>" + content_slice1_teaser + "</text><use xlink:href=idThisPlus /></svg>";
+            var svgElement_teaser = "<svg class='title-first-line_teaser' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='work-teaser' id=" + idThis + " x='50%' y='86' text-anchor='middle'>" + content_slice1_teaser + "</text><use xlink:href=" + idThisPlus + " /></svg>";
 
-            self.find(".teaser-title-wrapper").append(svgElement_teaser);
+            self.find(".work-teaser-title-wrapper").append(svgElement_teaser);
         }
 
         get_first_line_work_teaser(index);
+    });
 
-    } );
+
 
     /***************************
-     * end of TITLE FIX PWORK TEASER
+     * end of TITLE FIX WORK TEASER
      **************************/
 
 });

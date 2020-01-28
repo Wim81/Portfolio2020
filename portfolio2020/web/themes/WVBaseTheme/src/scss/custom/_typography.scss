@@ -47,6 +47,11 @@ svg {
   overflow: visible;
 }
 
+svg.title-first-line_teaser {
+  width: calc(100% - 30px);
+  left: 15px;
+}
+
 text.h1 {
   @include font($font-titles, $font-size-h1-mobile, $line-height-h1, $weight-bold);
   text-transform: uppercase;
@@ -68,7 +73,7 @@ text.h1 {
   }
 }
 
-p.work-teaser {
+p.work-teaser-textcontent {
   z-index: 0;  /* mixin source map fix */
   @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
   text-transform: uppercase;
