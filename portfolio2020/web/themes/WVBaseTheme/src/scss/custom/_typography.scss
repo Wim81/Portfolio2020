@@ -73,7 +73,8 @@ text.h1 {
   }
 }
 
-p.work-teaser-textcontent {
+p.work-teaser-textcontent,
+p.blog-teaser-title {
   z-index: 0;  /* mixin source map fix */
   @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
   text-transform: uppercase;
@@ -87,6 +88,15 @@ p.work-teaser-textcontent {
   @media (min-width: 1200px) {
     font-size: $font-size-teaser-title;
   }
+}
+
+p.blog-teaser-title {
+  text-align: left;
+  text-shadow: -3px -3px 0px #000000,
+               -3px 3px 0px #000000,
+               3px -3px 0px #000000,
+               3px 3px 0px #000000;
+  line-height: 1.2;
 }
 
 text.work-teaser {
