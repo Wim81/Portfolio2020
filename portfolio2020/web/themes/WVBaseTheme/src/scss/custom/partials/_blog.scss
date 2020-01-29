@@ -35,6 +35,7 @@
     &-right {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
   }
 
@@ -42,6 +43,7 @@
 
     &-outer {
       min-width: 250px;
+      height: 150px;
       margin-right: 1.5rem;
     }
 
@@ -54,11 +56,24 @@
     }
   }
 
-  &-text {
-
+  &-text p {
+    transition: $transition-standard;
   }
 
   &-linktext {
+    margin-bottom: 0;
 
+    &:after {
+      font-family: $font-awesome;
+      content: '\f04e';
+      font-size: $font-size-base-mobile;
+      font-weight: $weight-bold;
+      margin-left: 1.5rem;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-base;
+        margin-left: 2.5rem;
+      }
+    }
   }
 }
