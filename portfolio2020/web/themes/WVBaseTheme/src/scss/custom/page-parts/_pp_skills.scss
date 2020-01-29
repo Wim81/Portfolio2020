@@ -25,6 +25,15 @@
 
     em {
       color: $secondary;
+      transition: $transition-standard;
+      background: linear-gradient(90deg, $white, $white);
+      background-repeat: no-repeat;
+      background-position: -5rem 1.25rem;
+
+      &:hover {
+        color: $primary;
+        background-position: 0 0;
+      }
     }
 
     &2 h4:first-of-type {
