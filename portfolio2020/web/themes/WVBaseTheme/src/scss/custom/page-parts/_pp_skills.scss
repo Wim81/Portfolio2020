@@ -1,0 +1,38 @@
+.pp_skills {
+  background-color: $primary-50;
+
+  &-text {
+    h4 {
+      @include font($font-titles, $font-size-h2-mobile, $line-height-h2, $weight-regular);
+      color: $white;
+      margin-bottom: 1rem;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-h2;
+      }
+    }
+
+    p {
+      color: $white;
+      font-size: $font-size-base-min;
+      line-height: $line-height-base-min;
+      font-family: "Open Sans", Verdana, sans-serif;
+
+       + h4 {
+         padding-top: 1rem;
+       }
+    }
+
+    em {
+      color: $secondary;
+    }
+
+    &2 h4:first-of-type {
+      padding-top: 1rem;
+
+      @media (min-width: 768px) {
+        padding-top: 0;
+      }
+    }
+  }
+}
