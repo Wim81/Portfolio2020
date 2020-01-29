@@ -53,3 +53,8 @@
     margin-left: 12.5%;
   }
 }
+
+a:focus,
+btn:focus {
+  outline: 0;
+}
