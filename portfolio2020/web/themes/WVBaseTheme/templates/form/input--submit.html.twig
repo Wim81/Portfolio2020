@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+
+{%
+set classes = [
+'contact-form-submit',
+'submit-btn',
+'btn',
+'btn-primary',
+'btn-block'
+]
+%}
+
+<div class="submit-btn-outerdiv mt-6">
+    <span class="submit-btn-wrapper">
+        <input{{ attributes.addClass(classes) }} />{{ children }}
+    </span>
+</div>

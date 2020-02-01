@@ -27,29 +27,41 @@ jQuery(document).ready( function($) {
 
     /* make form labels appear when there is input */
     $(".label-switch").keyup(function() {
-        if ($(this).val() ) {
-            $(this).prev().css("opacity", 1);
+        if($(this).val() ) {
+            $(this).prev().addClass("form-label-has-input");
         } else {
-            $(this).prev().css("opacity", 0);
+            $(this).prev().removeClass("form-label-has-input");
         }
     });
 
-    /* form checkbox toggle */
-    $("form .label-checkbox").on("click", function() {
-       $(this).toggleClass("checked");
+    /* check initial input form fields */
+    $(".contact-form .label-switch").each( function() {
+        if($(this).val() ) {
+            $(this).prev().addClass("form-label-has-input");
+        } else {
+            $(this).prev().removeClass("form-label-has-input");
+        }
     });
+
+    /* repair exit button modal */
+    $(".ui-dialog-titlebar-close").html("x");
+
+    /* form checkbox toggle */
+    /*$("form .label-checkbox").on("click", function() {
+       $(this).toggleClass("checked");
+    });*/
 
     // form custom select box with selectize.js
-    $(".form-select").selectize({
+    /*$(".form-select").selectize({
         create: false
-    });
+    });*/
 
     /* form show file name uploaded file */
-    $('.file-input-action').bind('change', function() {
+    /*$('.file-input-action').bind('change', function() {
         var fileName = '';
         fileName = $(this).val();
         $(this).parent().find('.file-input-wrapper-filename').html(fileName);
-    });
+    });*/
 
     /* animated hamburger menu class toggle */
     $('.hamburger').on("click", function() {

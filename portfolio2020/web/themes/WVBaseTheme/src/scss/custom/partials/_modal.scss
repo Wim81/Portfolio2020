@@ -1,0 +1,37 @@
+.webform-confirmation-modal {
+  z-index: 99999;
+  background-color: $black;
+  padding: 0;
+  border-radius: 0;
+
+  &.ui-widget.ui-widget-content {
+    border: 1px solid $secondary;
+  }
+
+  .ui-widget-header {
+    color: $black;
+    background-color: $secondary;
+    border: none;
+    border-radius: 0;
+
+    .ui-dialog-titlebar-close {
+      border: 1px solid $secondary;
+      border-radius: 0;
+      background-color: $black;
+      color: orange;
+      line-height: 0;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &--content {
+    display: flex;
+    align-items: center;
+    color: $secondary;
+  }
+}
