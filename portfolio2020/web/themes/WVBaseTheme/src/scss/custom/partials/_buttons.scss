@@ -15,6 +15,13 @@
     background-size: 200% 100%;
     background-position-x: 0%;
 
+    &:focus {
+      color: $primary;
+      background-color: transparent;
+      box-shadow: none;
+      border-color: $primary;
+    }
+
     &:hover {
       background-position-x: -100%;
       color: $black-75;
