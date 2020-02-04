@@ -2,11 +2,15 @@
 
   &-intro {
 
+    &-container {
+      max-width: 1480px;
+    }
+
     &-inner {
       height: 80vh;
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: 0% 0%;
+      background-position: 0 80px;
     }
 
     &-texts {
