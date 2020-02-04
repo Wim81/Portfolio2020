@@ -1,11 +1,11 @@
 .slick {
 
   &-prev:before {
-    content: '\f137';
+    content: '\f04a';
   }
 
   &-next:before {
-    content: '\f138';
+    content: '\f04e';
   }
 
   &-prev:before,
@@ -13,47 +13,45 @@
     font-family: $font-awesome;
     font-weight: $weight-bold;
     font-size: 24px;
-    color: $primary;
+    color: $secondary;
     opacity: 1;
   }
 
-  &-dots {
-    position: initial;
-    padding-left: 18px;
-    padding-top: 1rem;
-
-    li {
-
-      &:before {
-        background-color: $grey;
-        width: $slider-dot-size;
-        height: $slider-dot-size;
-        border-radius: $slider-dot-size;
-      }
-
-      button {
-        display: none;
-      }
-
-      &.slick-active:before {
-        background-color: $primary;
-      }
-    }
+  &-prev {
+    left: -40px;
+    top: 43%;
   }
 
-  // class for hiding arrows for navigation on mobile, make sure to have the dots or auto sliding on in that case though
-  &-mobile-no-arrows {
-
-    @media (max-width: 768px) {
-      .slick-arrow {
-        display: none;
-      }
-    }
+  &-next {
+    right: -40px;
+    top: 43%;
   }
 
   // fix for unwanted box-shadow cut-off
   &-list {
     box-sizing: initial;
     padding: 5px 0px;
+  }
+}
+
+ul.slick-dots {
+  position: initial;
+
+  li {
+
+    &:before {
+      background-color: $grey;
+      width: $slider-dot-size;
+      height: $slider-dot-size;
+      border-radius: $slider-dot-size;
+    }
+
+    button {
+      display: none;
+    }
+
+    &.slick-active:before {
+      background-color: $primary;
+    }
   }
 }

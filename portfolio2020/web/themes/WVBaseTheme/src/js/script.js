@@ -5,20 +5,22 @@ jQuery(document).ready( function($) {
     var thisYear = thisDate.getFullYear();
     $("#current_year").html(thisYear);
 
-    // pp_slider_testimonial slider action
-    /*$(".pp_slider_testimonial-wrapper").slick({
-     infinite: true,
-     speed: 300,
-     slidesToShow: 1,
-     });*/
-
-    // pp_slider_slider-images slider action
-    /*$(".slider-image-wrapper").slick({
+    /* pp_slider_slider-images slider action */
+    jQuery(".slider-image-wrapper").slick({
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        dots: true
-    });*/
+        dots: true,
+        arrows: false,
+        mobileFirst: true,
+        responsive: [{
+            breakpoint: 640,
+            settings: {
+                dots: false,
+                arrows: true
+            }
+        }]
+    });
 
     // pp_image_gallery interactive modal action
     /*if( $(".gallery a").length ) {
