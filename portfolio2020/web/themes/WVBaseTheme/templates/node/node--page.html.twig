@@ -1,34 +1,68 @@
-<div class="node--page">
+{% if is_front %}
 
-    <div class="top-image">
-        <div class="top-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})">
-            <div class="container h100">
-                <div class="row h100">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container textcontent-wrapper">
-        <div class="row">
-            <div class="col-md-8 offset-md-2 node-title-wrapper">
-                <h1 class="textcontent" id="textcontent">{{ node.title.value }}</h1>
-            </div>
-        </div>
-    </div>
+    <div class="frontpage">
 
-    <div class="intro-section mb-10">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
-                    <div class="intro-section-title-wrapper h2-wrapper mb-3">
-                        <h2 class="intro-section-title">{{ content.field_intro_title.0 }}</h2>
+        <div class="frontpage-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 frontpage-intro-inner"  style="background-image: url({{ content.field_main_image.0['#markup'] }})">
+                        <div class="frontpage-intro-texts">
+                            <div class="frontpage-intro-text1">
+                                <div>Web</div>
+                                <div>Developer</div>
+                            </div>
+                            <div class="frontpage-intro-text2">
+                                <div>Wim</div>
+                                <div>Verpoorten</div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="intro-section-text text-center">{{ content.field_intro_text.0['#text']|striptags }}</p>
                 </div>
             </div>
         </div>
+
+        {{ content.field_page_parts }}
+
     </div>
 
-    {{ content.field_page_parts }}
 
-</div>
+{% else %}
+
+    <div class="node--page">
+
+        <div class="top-image">
+            <div class="top-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})">
+                <div class="container h100">
+                    <div class="row h100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container textcontent-wrapper">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 node-title-wrapper">
+                    <h1 class="textcontent" id="textcontent">{{ node.title.value }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-section mb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+                        <div class="intro-section-title-wrapper h2-wrapper mb-3">
+                            <h2 class="intro-section-title">{{ content.field_intro_title.0 }}</h2>
+                        </div>
+                        <p class="intro-section-text text-center">{{ content.field_intro_text.0['#text']|striptags }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ content.field_page_parts }}
+
+    </div>
+
+{% endif %}
+
+

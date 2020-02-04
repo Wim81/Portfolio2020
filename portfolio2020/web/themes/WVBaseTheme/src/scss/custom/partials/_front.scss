@@ -1,0 +1,34 @@
+.frontpage {
+
+  &-intro {
+
+    &-inner {
+      height: 80vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0% 0%;
+    }
+
+    &-texts {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: $font-titles;
+      text-transform: uppercase;
+      font-size: $font-size-h1;
+      line-height: 0.9;
+    }
+
+    &-text1 {
+      color: $secondary;
+      text-align: right;
+    }
+
+    &-text2 {
+      color: $primary;
+      position: relative;
+      top: -5.2rem;
+    }
+  }
+}

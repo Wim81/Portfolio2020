@@ -1,0 +1,9 @@
+<?php
+
+// allows for is_front filter in node
+function wvbasetheme_preprocess_node(&$variables) {
+  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}
+
+
+
