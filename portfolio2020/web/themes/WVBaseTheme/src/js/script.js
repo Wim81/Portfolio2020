@@ -119,40 +119,34 @@ jQuery(document).ready( function($) {
         $(this).attr('id', 'work-teaser-' + parseInt(index + 1));
     });
 
-    if ($(".work-teaser-title-stroked").length !== 0) {
-        // work teasers aanwezig op page
-        $(".work-teaser-title-stroked").each(function() {
-            var thisId = $(this).attr('id');
-            console.log(thisId);
 
-            var resizeTimeoutTeaser;
-            var strokeText = new StrokeText(thisId, options);
-            clearTimeout(resizeTimeoutTeaser);
-            resizeTimeoutTeaser = setTimeout(function() {
-                // reset and re-init so strokeText.js can re-evaluate container size
-                strokeText.reset();
-                strokeText = new StrokeText(thisId, options);
-                applyStrokeTeaser(strokeText);
-            }, 100);
+    /* Teaser1 */
+    var resizeTimeoutTeaser1;
+    var strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
+    clearTimeout(resizeTimeoutTeaser1);
+    resizeTimeoutTeaser1 = setTimeout(function() {
+        // reset and re-init so strokeText.js can re-evaluate container size
+        strokeTextTeaser1.reset();
+        strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
+        applyStrokeTeaser(strokeTextTeaser1);
 
-            function handleViewportChangeTeaser() {
-                // timeout to debounce
-                clearTimeout(resizeTimeoutTeaser);
-                resizeTimeoutTeaser = setTimeout(function() {
-                    // reset and re-init so strokeText.js can re-evaluate container size
-                    strokeText.reset();
-                    strokeText = new StrokeText(thisId, options);
-                    applyStrokeTeaser(strokeText);
-                    console.log("handleViewportChangeteaser + "+ thisId);
-                }, 100);
-            }
-            window.onresize = handleViewportChangeTeaser;
-            window.onorientationchange = handleViewportChangeTeaser;
+    }, 100);
 
-        });
-    } else {
-        // geen work teasers aanwezig op page
+    function handleViewportChangeTeaser1() {
+        // timeout to debounce
+        clearTimeout(resizeTimeoutTeaser1);
+        resizeTimeoutTeaser1 = setTimeout(function() {
+            // reset and re-init so strokeText.js can re-evaluate container size
+            strokeTextTeaser1.reset();
+            strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
+            applyStrokeTeaser(strokeTextTeaser1);
+
+        }, 100);
     }
+    window.onresize = handleViewportChangeTeaser1;
+    window.onorientationchange = handleViewportChangeTeaser1;
+    /* end of teaser 1 */
+
 
     /***************************
      * end of TITLE FIX WORK TEASER
