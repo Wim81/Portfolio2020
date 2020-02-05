@@ -22,26 +22,37 @@
   &-container {
     margin-bottom: 2rem;
     position: relative;
+    top: -5.2rem;
+    margin-bottom: -1.8rem;
 
     @media (min-width: 480px) {
-      //top: -1.5rem;
+      top: -5.8rem;
+      margin-bottom: -1.8rem;
     }
 
     @media (min-width: 1200px) {
-      //top: -3.8rem;
+      top: -7.6rem;
+      margin-bottom: -3.6rem;
     }
   }
 
   &-wrapper {
     position: relative;
-    //top: -2.5rem;
 
     canvas {
       position: relative;
-      top: 41px;
+      top: 36px;
       left: 0;
       z-index: 0;
       transform: scale(0.997);
+
+      @media (min-width: 480px) {
+        top: 36px;
+      }
+
+      @media (min-width: 1200px) {
+        top: 41px;
+      }
     }
   }
 

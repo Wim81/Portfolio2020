@@ -71,11 +71,17 @@ jQuery(document).ready( function($) {
         }
     }
 
-    var strokeText = new StrokeText('title-stroked', options);
-    applyStroke(strokeText);
-
-
     var resizeTimeout;
+    var strokeText = new StrokeText('title-stroked', options);
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+        // reset and re-init so strokeText.js can re-evaluate container size
+        strokeText.reset();
+        strokeText = new StrokeText('title-stroked', options);
+        applyStroke(strokeText);
+
+    }, 100);
+
     function handleViewportChange() {
         // timeout to debounce
         clearTimeout(resizeTimeout);
