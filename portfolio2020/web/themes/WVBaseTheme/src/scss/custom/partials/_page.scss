@@ -13,18 +13,38 @@
   }
 }
 
-.textcontent-wrapper {
-  margin-bottom: 2rem;
-  position: relative;
-  top: -1rem;
+.title-stroked {
+  z-index: 1;
+  margin: 0;
+  padding: 5px;
+  line-height: 1.1;
 
-  @media (min-width: 480px) {
-    top: -1.5rem;
+  &-container {
+    margin-bottom: 2rem;
+    position: relative;
+
+    @media (min-width: 480px) {
+      //top: -1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      //top: -3.8rem;
+    }
   }
 
-  @media (min-width: 1200px) {
-    top: -3.8rem;
+  &-wrapper {
+    position: relative;
+    //top: -2.5rem;
+
+    canvas {
+      position: relative;
+      top: 41px;
+      left: 0;
+      z-index: 0;
+      transform: scale(0.997);
+    }
   }
+
 }
 
 .top-tags {

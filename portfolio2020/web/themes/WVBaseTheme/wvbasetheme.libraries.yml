@@ -7,6 +7,7 @@ global-scripts:
   version: 1.x
   js:
     node_modules/slick-carousel/slick/slick.js: {}
+    node_modules/stroketext.js/dist/strokeText.min.js: {}
     node_modules/simplelightbox/dist/simple-lightbox.min.js: {}
     node_modules/selectize/dist/js/standalone/selectize.min.js: {}
     node_modules/selectize/dist/js/standalone/selectize.js: {}

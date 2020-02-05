@@ -22,11 +22,6 @@ jQuery(document).ready( function($) {
         }]
     });
 
-    // pp_image_gallery interactive modal action
-    /*if( $(".gallery a").length ) {
-        var lightbox = $(".gallery a").simpleLightbox();
-    }*/
-
     /* make form labels appear when there is input */
     $(".label-switch").keyup(function() {
         if($(this).val() ) {
@@ -48,70 +43,52 @@ jQuery(document).ready( function($) {
     /* repair exit button modal */
     $(".ui-dialog-titlebar-close").html("x");
 
-    /* form checkbox toggle */
-    /*$("form .label-checkbox").on("click", function() {
-       $(this).toggleClass("checked");
-    });*/
-
-    // form custom select box with selectize.js
-    /*$(".form-select").selectize({
-        create: false
-    });*/
-
-    /* form show file name uploaded file */
-    /*$('.file-input-action').bind('change', function() {
-        var fileName = '';
-        fileName = $(this).val();
-        $(this).parent().find('.file-input-wrapper-filename').html(fileName);
-    });*/
-
     /* animated hamburger menu class toggle */
     $('.hamburger').on("click", function() {
         $(this).toggleClass("is-active");
     });
 
     /***************************
-     * TITLE FIX PAGE TITLE
+     * TITLE FIX PAGE/NODE TITLE
      **************************/
 
-    var content = $(".textcontent").html();
-    // console.log(content);
-
-    var content_slices = content.split("\n");
-    // console.log(content_slices);
-
-    function first_line(element) {
-        var el = document.getElementById(element);
-        var cache = el.innerHTML;
-        var text = el.innerHTML;
-        el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
-        var arr = text.split(" ");
-        for (var i = 0; i < arr.length; i++) {
-            text = text.substring(0, text.lastIndexOf(" "));
-            if (el.offsetHeight == initial) {
-                var temp = el.innerHTML;
-                el.innerHTML = cache;
-                return temp;
-            }
-            el.innerHTML = text;
-        }
+    var options = {
+        lineCap: 'round', // ['round', 'butt', 'square']
+        lineJoin: 'round', // ['bevel', 'round', 'miter']
+        miterLimit: 10, // control spikeyness
+        lineDashArray: [0, 0], // for dashed lines: [line, gap]
+        debug: false, // examine measurements and properties used
+        disableForFirefox: false // some fonts don't stroke well in firefox, bc they are rendered at varying baselines
     }
 
-    function get_first_line() {
-        var content_slice1 = first_line('textcontent');
-        $(".title-first-line").remove();
+    function applyStroke(element) {
         if (matchMedia('(max-width: 480px)').matches) {
-            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='25' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
-        } else if (matchMedia('(max-width: 1199px)').matches) {
-            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='38' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+            element.stroke(3, '#ffffff');
+        } else if (matchMedia('(max-width: 1200px)').matches) {
+            element.stroke(4, '#ffffff');
         } else {
-            var svgElement = "<svg class='title-first-line' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='h1' id='lift' x='50%' y='86' text-anchor='middle'>" + content_slice1 + "</text><use id='use' xlink:href='#lift' /></svg>";
+            element.stroke(5, '#ffffff');
         }
-        $(".node-title-wrapper").append(svgElement);
     }
 
-    get_first_line();
-    $(window).resize( get_first_line );
+    var strokeText = new StrokeText('title-stroked', options);
+    applyStroke(strokeText);
+
+
+    var resizeTimeout;
+    function handleViewportChange() {
+        // timeout to debounce
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            // reset and re-init so strokeText.js can re-evaluate container size
+            strokeText.reset();
+            strokeText = new StrokeText('title-stroked', options);
+            applyStroke(strokeText);
+
+        }, 100);
+    }
+    window.onresize = handleViewportChange;
+    window.onorientationchange = handleViewportChange;
 
     /***************************
      * end of TITLE FIX PAGE TITLE
@@ -122,50 +99,7 @@ jQuery(document).ready( function($) {
      * TITLE FIX WORK TEASER
      **************************/
 
-    $(".work-teaser").each( function(index) {
-        var content_teaser = $(this).find(".work-teaser-textcontent").html();
-        // console.log(content_teaser);
-
-        var content_slices_teaser = content_teaser.split("\n");
-        // console.log(content_slices_teaser);
-        // console.log(index);
-
-        function first_line_work_teaser(index) {
-            var el = document.getElementsByClassName("work-teaser-textcontent")[index];
-            // console.log("el = " + el);
-            var cache = el.innerHTML;
-            var text = el.innerHTML;
-            el.innerHTML = 'a'; var initial = el.offsetHeight; el.innerHTML = cache;
-            var arr = text.split(" ");
-            for (var i = 0; i < arr.length; i++) {
-                text = text.substring(0, text.lastIndexOf(" "));
-                if (el.offsetHeight == initial) {
-                    var temp = el.innerHTML;
-                    el.innerHTML = cache;
-                    return temp;
-                }
-                el.innerHTML = text;
-            }
-        }
-
-        var self = $(this);
-
-        function get_first_line_work_teaser(index) {
-            var content_slice1_teaser = first_line_work_teaser(index);
-            // console.log("brrrr" + content_slice1_teaser);
-            self.find(".title-first-line_teaser").remove();
-            var idThis = "teaser" + index;
-            var idThisPlus = "#" + idThis;
-
-            var svgElement_teaser = "<svg class='title-first-line_teaser' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><text class='work-teaser' id=" + idThis + " x='50%' y='86' text-anchor='middle'>" + content_slice1_teaser + "</text><use xlink:href=" + idThisPlus + " /></svg>";
-
-            self.find(".work-teaser-title-wrapper").append(svgElement_teaser);
-        }
-
-        get_first_line_work_teaser(index);
-    });
-
-
+    // tbd
 
     /***************************
      * end of TITLE FIX WORK TEASER
