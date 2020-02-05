@@ -105,7 +105,9 @@ jQuery(document).ready( function($) {
      * TITLE FIX WORK TEASER
      **************************/
 
-    // tbd
+    $.each($('#sample_slider div.owl-item'), function(ind) {
+        $(this).attr('id', 'slide-' + parseInt(ind + 1));
+    });
 
     /***************************
      * end of TITLE FIX WORK TEASER
