@@ -83,7 +83,8 @@ jQuery(document).ready( function($) {
     }, 100);
 
     function handleViewportChange() {
-        // timeout to debounce
+        // timeout to debounceTeaser1");
+        console.log("handleViewportChange");
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(function() {
             // reset and re-init so strokeText.js can re-evaluate container size
@@ -93,8 +94,6 @@ jQuery(document).ready( function($) {
 
         }, 100);
     }
-    window.onresize = handleViewportChange;
-    window.onorientationchange = handleViewportChange;
 
     /***************************
      * end of TITLE FIX PAGE TITLE
@@ -134,6 +133,7 @@ jQuery(document).ready( function($) {
 
     function handleViewportChangeTeaser1() {
         // timeout to debounce
+        console.log("handleViewportChangeTeaser1");
         clearTimeout(resizeTimeoutTeaser1);
         resizeTimeoutTeaser1 = setTimeout(function() {
             // reset and re-init so strokeText.js can re-evaluate container size
@@ -143,13 +143,30 @@ jQuery(document).ready( function($) {
 
         }, 100);
     }
-    window.onresize = handleViewportChangeTeaser1;
-    window.onorientationchange = handleViewportChangeTeaser1;
     /* end of teaser 1 */
 
 
     /***************************
      * end of TITLE FIX WORK TEASER
+     **************************/
+
+
+    /***************************
+     * UPDATE FIXES ON RESIZE & ORIENTATION CHANGE
+     **************************/
+
+    var resizeHandler = function(){
+        handleViewportChange();
+        handleViewportChangeTeaser1();
+    };
+
+    $(window).resize(resizeHandler);
+    window.addEventListener("orientationchange", function() {
+        resizeHandler;
+    }, false);
+
+    /***************************
+     * end of UPDATE FIXES ON RESIZE & ORIENTATION CHANGE
      **************************/
 
 });
