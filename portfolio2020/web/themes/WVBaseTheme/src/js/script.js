@@ -105,9 +105,19 @@ jQuery(document).ready( function($) {
      * TITLE FIX WORK TEASER
      **************************/
 
-    $.each($('#sample_slider div.owl-item'), function(ind) {
-        $(this).attr('id', 'slide-' + parseInt(ind + 1));
+    $.each($('.work-teaser-title-stroked'), function(index) {
+        $(this).attr('id', 'work-teaser-' + parseInt(index + 1));
     });
+
+    if ($(".work-teaser-title-stroked").length !== 0) {
+        console.log("hier zijn work teasers");
+        $(".work-teaser-title-stroked").each(function() {
+            var thisId = $(this).attr('id');
+            console.log(thisId);
+        });
+    } else {
+        console.log("hier zijn GEEN work teasers");
+    }
 
     /***************************
      * end of TITLE FIX WORK TEASER
