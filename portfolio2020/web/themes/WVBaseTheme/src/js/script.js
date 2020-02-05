@@ -63,11 +63,11 @@ jQuery(document).ready( function($) {
 
     function applyStroke(element) {
         if (matchMedia('(max-width: 480px)').matches) {
-            element.stroke(3, '#ffffff');
+            element.stroke(4, '#111111');
         } else if (matchMedia('(max-width: 1200px)').matches) {
-            element.stroke(4, '#ffffff');
+            element.stroke(6, '#111111');
         } else {
-            element.stroke(5, '#ffffff');
+            element.stroke(8, '#111111');
         }
     }
 
