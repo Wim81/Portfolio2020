@@ -105,18 +105,53 @@ jQuery(document).ready( function($) {
      * TITLE FIX WORK TEASER
      **************************/
 
+    function applyStrokeTeaser(element) {
+        if (matchMedia('(max-width: 768px)').matches) {
+            element.stroke(3, '#111111');
+        } else if (matchMedia('(max-width: 1200px)').matches) {
+            element.stroke(4, '#111111');
+        } else {
+            element.stroke(4, '#111111');
+        }
+    }
+
     $.each($('.work-teaser-title-stroked'), function(index) {
         $(this).attr('id', 'work-teaser-' + parseInt(index + 1));
     });
 
     if ($(".work-teaser-title-stroked").length !== 0) {
-        console.log("hier zijn work teasers");
+        // work teasers aanwezig op page
         $(".work-teaser-title-stroked").each(function() {
             var thisId = $(this).attr('id');
             console.log(thisId);
+
+            var resizeTimeoutTeaser;
+            var strokeText = new StrokeText(thisId, options);
+            clearTimeout(resizeTimeoutTeaser);
+            resizeTimeoutTeaser = setTimeout(function() {
+                // reset and re-init so strokeText.js can re-evaluate container size
+                strokeText.reset();
+                strokeText = new StrokeText(thisId, options);
+                applyStrokeTeaser(strokeText);
+            }, 100);
+
+            function handleViewportChangeTeaser() {
+                // timeout to debounce
+                clearTimeout(resizeTimeoutTeaser);
+                resizeTimeoutTeaser = setTimeout(function() {
+                    // reset and re-init so strokeText.js can re-evaluate container size
+                    strokeText.reset();
+                    strokeText = new StrokeText(thisId, options);
+                    applyStrokeTeaser(strokeText);
+                    console.log("handleViewportChangeteaser + "+ thisId);
+                }, 100);
+            }
+            window.onresize = handleViewportChangeTeaser;
+            window.onorientationchange = handleViewportChangeTeaser;
+
         });
     } else {
-        console.log("hier zijn GEEN work teasers");
+        // geen work teasers aanwezig op page
     }
 
     /***************************
