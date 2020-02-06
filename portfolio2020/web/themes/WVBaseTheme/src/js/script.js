@@ -84,7 +84,6 @@ jQuery(document).ready( function($) {
 
     function handleViewportChange() {
         // timeout to debounceTeaser1");
-        console.log("handleViewportChange");
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(function() {
             // reset and re-init so strokeText.js can re-evaluate container size
@@ -119,21 +118,22 @@ jQuery(document).ready( function($) {
     });
 
 
-    /* Teaser1 */
-    var resizeTimeoutTeaser1;
-    var strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
-    clearTimeout(resizeTimeoutTeaser1);
-    resizeTimeoutTeaser1 = setTimeout(function() {
-        // reset and re-init so strokeText.js can re-evaluate container size
-        strokeTextTeaser1.reset();
-        strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
-        applyStrokeTeaser(strokeTextTeaser1);
+    /* teaser1 */
+    if( $("#work-teaser-1").length !== 0 ) {
+        console.log("teaser1");
+        var resizeTimeoutTeaser1;
+        var strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
+        clearTimeout(resizeTimeoutTeaser1);
+        resizeTimeoutTeaser1 = setTimeout(function() {
+            // reset and re-init so strokeText.js can re-evaluate container size
+            strokeTextTeaser1.reset();
+            strokeTextTeaser1 = new StrokeText('work-teaser-1', options);
+            applyStrokeTeaser(strokeTextTeaser1);
 
-    }, 100);
-
+        }, 100);
+    }
     function handleViewportChangeTeaser1() {
         // timeout to debounce
-        console.log("handleViewportChangeTeaser1");
         clearTimeout(resizeTimeoutTeaser1);
         resizeTimeoutTeaser1 = setTimeout(function() {
             // reset and re-init so strokeText.js can re-evaluate container size
