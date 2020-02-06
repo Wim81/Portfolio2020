@@ -1,4 +1,4 @@
-h1 {
+h1, .h1 {
   z-index: 0;  /* mixin source map fix */
   @include font($font-titles, $font-size-h1-mobile, $line-height-h1, $weight-bold);
   text-transform: uppercase;
@@ -12,91 +12,6 @@ h1 {
   @media (min-width: 1200px) {
     font-size: $font-size-h1;
     top: 0.4rem;
-  }
-
-  /*&:first-line {
-    color: transparent;
-  }*/
-}
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  overflow: visible;
-}
-
-svg.title-first-line_teaser {
-  width: calc(100% - 30px);
-  left: 15px;
-}
-
-text.h1 {
-  @include font($font-titles, $font-size-h1-mobile, $line-height-h1, $weight-bold);
-  text-transform: uppercase;
-  fill: $primary;
-  stroke: $black;
-  stroke-width: 5px;
-  paint-order: stroke fill;
-  text-anchor: middle;
-  stroke-linejoin: round;
-
-  @media (min-width: 480px) {
-    font-size: $font-size-h1-tablet;
-    stroke-width: 7px;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: $font-size-h1;
-    stroke-width: 13px;
-  }
-}
-
-p.work-teaser-textcontent,
-p.blog-teaser-title {
-  z-index: 0;  /* mixin source map fix */
-  @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-
-  @media (min-width: 480px) {
-    font-size: $font-size-teaser-title-tablet;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: $font-size-teaser-title;
-  }
-}
-
-p.blog-teaser-title {
-  text-align: left;
-  text-shadow: -3px -3px 0px #000000,
-               -3px 3px 0px #000000,
-               3px -3px 0px #000000,
-               3px 3px 0px #000000;
-  line-height: 1.2;
-}
-
-text.work-teaser {
-  @include font($font-titles, $font-size-teaser-title-mobile, $line-height-teaser-title, $weight-bold);
-  text-transform: uppercase;
-  fill: $primary;
-  stroke: $black;
-  stroke-width: 5px;
-  paint-order: stroke fill;
-  text-anchor: middle;
-  stroke-linejoin: round;
-
-  @media (min-width: 480px) {
-    font-size: $font-size-teaser-title-tablet;
-    stroke-width: 6px;
-  }
-
-  @media (min-width: 768px) {
-    font-size: $font-size-teaser-title;
-    stroke-width: 7px;
   }
 }
 

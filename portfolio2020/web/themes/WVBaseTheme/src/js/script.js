@@ -51,5 +51,5 @@ jQuery(document).ready( function($) {
     /* add classes to eu cookie compliance banner buttons  */
     $(".eu-cookie-compliance-banner .agree-button").addClass("btn btn-primary");
     $(".eu-cookie-compliance-banner .decline-button").addClass("btn btn-primary");
-    
+
 });

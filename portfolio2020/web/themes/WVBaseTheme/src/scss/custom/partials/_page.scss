@@ -14,11 +14,12 @@
   }
 }
 
-.title-stroked {
+.main-title {
   z-index: 1;
   margin: 0;
   padding: 5px;
-  line-height: 1.1;
+  line-height: 0.9;
+  text-shadow: 10px -10px 0 $black;
 
   &-container {
     margin-bottom: 2rem;
@@ -34,26 +35,6 @@
     @media (min-width: 1200px) {
       top: -7.6rem;
       margin-bottom: -3.6rem;
-    }
-  }
-
-  &-wrapper {
-    position: relative;
-
-    canvas {
-      position: relative;
-      top: 36px;
-      left: 0;
-      z-index: 0;
-      transform: scale(0.997);
-
-      @media (min-width: 480px) {
-        top: 36px;
-      }
-
-      @media (min-width: 1200px) {
-        top: 41px;
-      }
     }
   }
 }
