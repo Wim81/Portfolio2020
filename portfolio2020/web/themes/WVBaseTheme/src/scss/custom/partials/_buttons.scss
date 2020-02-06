@@ -46,6 +46,10 @@
     &:hover {
       color: $secondary;
     }
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 
