@@ -1,0 +1,103 @@
+div#sliding-popup {
+  background-color: $black;
+}
+
+.eu-cookie-compliance-banner {
+  border-top: 3px solid $primary;
+  background-color: $primary-25;
+
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+
+    #popup-text {
+      max-width: unset;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+
+      h2, p, button {
+        font-family: $font-text;
+        font-weight: $weight-regular;
+        text-transform: initial;
+        display: block;
+        font-size: $font-size-base-min;
+        padding: 0;
+        margin: 0 0 0.5rem 0;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      button {
+        margin: 0 auto;
+        transition: $transition-standard;
+
+        &:hover {
+          color: $secondary;
+        }
+
+        @media (min-width: 992px) {
+          margin: 0;
+        }
+      }
+    }
+
+    #popup-buttons {
+      max-width: unset;
+      text-align: center;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 640px) {
+        flex-direction: row;
+
+        button:first-of-type {
+          margin-right: 0.5rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        flex-direction: column;
+
+        button:first-of-type {
+          margin-right: 0rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-grow: 3;
+        padding-right: 0;
+
+        button:first-of-type {
+          margin-right: 0.5rem;
+        }
+      }
+
+      button {
+        box-shadow: none;
+        text-shadow: none;
+        width: 230px;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

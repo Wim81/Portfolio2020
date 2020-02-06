@@ -48,6 +48,10 @@ jQuery(document).ready( function($) {
         $(this).toggleClass("is-active");
     });
 
+    /* add classes to eu cookie compliance banner buttons  */
+    $(".eu-cookie-compliance-banner .agree-button").addClass("btn btn-primary");
+    $(".eu-cookie-compliance-banner .decline-button").addClass("btn btn-primary");
+
     /***************************
      * TITLE FIX PAGE/NODE TITLE
      **************************/
