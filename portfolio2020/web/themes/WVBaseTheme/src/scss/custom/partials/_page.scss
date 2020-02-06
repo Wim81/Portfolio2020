@@ -3,6 +3,7 @@
   @include full-width;
   position: relative;
   height: 48.9vw;
+  min-height: 300px;
   max-height: 600px;
 
   &-inner {
