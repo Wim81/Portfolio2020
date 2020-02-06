@@ -8,7 +8,7 @@
 
   &-inner {
     height: 100%;
-    @include bg-img;
+    @include bg-img-bottom;
     background-color: $secondary;
     background-blend-mode: multiply;
   }

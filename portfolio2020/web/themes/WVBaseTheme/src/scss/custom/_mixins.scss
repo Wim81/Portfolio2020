@@ -24,6 +24,13 @@
   background-position: center;
 }
 
+/* background image bottom alignment setup */
+@mixin bg-img-bottom {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
 /* background image contained */
 @mixin bg-img-contain {
   background-repeat: no-repeat;
