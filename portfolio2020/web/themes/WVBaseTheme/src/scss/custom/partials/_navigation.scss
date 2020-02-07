@@ -39,3 +39,16 @@
     color: transparent;
   }
 }
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.frontpage {
+
+  // hide home link in main nav on homepage
+  header .navbar .nav-item.active {
+    display: none;
+  }
+}
