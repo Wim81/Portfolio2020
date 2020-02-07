@@ -1,3 +1,9 @@
+/* hide textillate animated homepage title before animation kicks in */
+jQuery('.textillate1').css("visibility", "hidden");
+jQuery('.textillate2').css("visibility", "hidden");
+jQuery('.textillate3').css("visibility", "hidden");
+jQuery('.textillate4').css("visibility", "hidden");
+
 jQuery(document).ready( function($) {
 
     /* huidig jaartal in footer */
