@@ -140,6 +140,16 @@ strong, em {
   font-style: normal;
 }
 
+a {
+  color: $primary;
+  transition: $transition-standard;
+
+  &:hover {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
 ul:not(.toolbar-menu) {
 
   li {
