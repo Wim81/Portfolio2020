@@ -52,4 +52,6 @@ jQuery(document).ready( function($) {
     $(".eu-cookie-compliance-banner .agree-button").addClass("btn btn-primary");
     $(".eu-cookie-compliance-banner .decline-button").addClass("btn btn-primary");
 
+    /* AOS init */
+    AOS.init();
 });

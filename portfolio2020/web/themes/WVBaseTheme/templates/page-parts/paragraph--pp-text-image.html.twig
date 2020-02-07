@@ -5,14 +5,14 @@
 {% endif %}
         <div class="container">
             <div class="row pp_text_image-inner">
-                <div class="col-md-6 pb-5 pt-1">
+                <div class="col-md-6 pb-5 pt-1" data-aos="fade-up" data-aos-duration="600">
                     {% if content.field_pp_textimage_text_title.0 %}
                         <h3>{{ content.field_pp_textimage_text_title.0 }}</h3>
                     {% endif %}
                     {{ content.field_pp_textimage_text.0 }}
                 </div>
                 <div class="col-md-6 pb-5">
-                    <div class="pp_text_image-img">
+                    <div class="pp_text_image-img" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                         {{ content.field_pp_textimage_img.0 }}
                     </div>
                 </div>

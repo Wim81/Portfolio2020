@@ -2,6 +2,7 @@ global-styling:
   version: 1.x
   css:
     layout:
+      node_modules/aos/dist/aos.css: {}
       dist/css/style.css: { media: screen }
 global-scripts:
   version: 1.x
@@ -12,6 +13,7 @@ global-scripts:
     node_modules/selectize/dist/js/standalone/selectize.min.js: {}
     node_modules/selectize/dist/js/standalone/selectize.js: {}
     node_modules/bootstrap/dist/js/bootstrap.js: {}
+    node_modules/aos/dist/aos.js: {}
     dist/js/script.js: {}
     dist/js/header-sticky-scroll.js: {}
   dependencies:
