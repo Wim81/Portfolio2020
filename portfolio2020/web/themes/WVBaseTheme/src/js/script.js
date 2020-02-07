@@ -6,10 +6,23 @@ jQuery('.textillate4').css("visibility", "hidden");
 
 jQuery(document).ready( function($) {
 
-    /* huidig jaartal in footer */
+    /* current year in footer */
     var thisDate = new Date();
     var thisYear = thisDate.getFullYear();
     $("#current_year").html(thisYear);
+
+    /* current age */
+    function getAge(dateString) {
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
+    $("#my_age").html(getAge("October 15, 1981 01:00:00"));
 
     /* pp_slider_slider-images slider action */
     jQuery(".slider-image-wrapper").slick({
