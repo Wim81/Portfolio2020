@@ -5,20 +5,20 @@
   border-radius: 0;
 
   &.ui-widget.ui-widget-content {
-    border: 1px solid $secondary;
+    border: 1px solid $primary;
   }
 
   .ui-widget-header {
     color: $black;
-    background-color: $secondary;
+    background-color: $primary;
     border: none;
     border-radius: 0;
 
     .ui-dialog-titlebar-close {
-      border: 1px solid $secondary;
+      border: 1px solid $primary;
       border-radius: 0;
       background-color: $black;
-      color: orange;
+      color: $primary;
       line-height: 0;
       font-size: 0.8rem;
       margin-right: 0.5rem;
@@ -32,6 +32,6 @@
   &--content {
     display: flex;
     align-items: center;
-    color: $secondary;
+    color: $primary;
   }
 }
