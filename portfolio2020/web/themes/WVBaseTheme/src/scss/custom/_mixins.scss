@@ -28,7 +28,7 @@
 @mixin bg-img-bottom {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 100%;
+  background-position: 50% 99.9%; /* 100% can lead to line of background color without image for some reason */
 }
 
 /* background image contained */

@@ -32,10 +32,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
-    p:first-of-type {
-      flex: 1 1 auto;
-    }
   }
 
   .btn {
