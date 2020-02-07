@@ -56,7 +56,72 @@ jQuery(document).ready( function($) {
     AOS.init();
 
     /* Textillate effect homepage */
-    jQuery('.textillate4').textillate();
+    $(function () {
+        $('.textillate1').textillate({
+            loop: false,
+            initialDelay: 1000,
+            autoStart: true,
+            in: {
+                effect: 'fadeInDown',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false,
+                shuffle: false,
+                reverse: true
+            },
+            type: 'char'
+        });
+    })
 
+    $(function () {
+        $('.textillate2').textillate({
+            loop: false,
+            initialDelay: 1000,
+            autoStart: true,
+            in: {
+                effect: 'fadeInUp',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false,
+                shuffle: false,
+                reverse: true
+            },
+            type: 'char'
+        });
+    })
 
+    $(function () {
+        $('.textillate3').textillate({
+            loop: false,
+            initialDelay: 500,
+            autoStart: true,
+            in: {
+                effect: 'fadeInDown',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false,
+                shuffle: false,
+                reverse: false
+            },
+            type: 'char'
+        });
+    })
+
+    $(function () {
+        $('.textillate4').textillate({
+            loop: false,
+            initialDelay: 500,
+            autoStart: true,
+            in: {
+                effect: 'fadeInUp',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false,
+                shuffle: false,
+                reverse: false
+            },
+            type: 'char'
+        });
+    })
+    /* end of Textillate effect homepage */
 });
