@@ -4,7 +4,6 @@ global-styling:
     layout:
       node_modules/aos/dist/aos.css: {}
       node_modules/textillate/assets/animate.css: {}
-      node_modules/textillate/assets/style.css: {}
       dist/css/style.css: { media: screen }
 global-scripts:
   version: 1.x
