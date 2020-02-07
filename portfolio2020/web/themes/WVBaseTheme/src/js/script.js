@@ -54,4 +54,9 @@ jQuery(document).ready( function($) {
 
     /* AOS init */
     AOS.init();
+
+    /* Textillate effect homepage */
+    jQuery('.textillate4').textillate();
+
+
 });

@@ -3,6 +3,8 @@ global-styling:
   css:
     layout:
       node_modules/aos/dist/aos.css: {}
+      node_modules/textillate/assets/animate.css: {}
+      node_modules/textillate/assets/style.css: {}
       dist/css/style.css: { media: screen }
 global-scripts:
   version: 1.x
@@ -14,6 +16,9 @@ global-scripts:
     node_modules/selectize/dist/js/standalone/selectize.js: {}
     node_modules/bootstrap/dist/js/bootstrap.js: {}
     node_modules/aos/dist/aos.js: {}
+    node_modules/textillate/assets/jquery.fittext.js: {}
+    node_modules/textillate/assets/jquery.lettering.js: {}
+    node_modules/textillate/jquery.textillate.js: {}
     dist/js/script.js: {}
     dist/js/header-sticky-scroll.js: {}
   dependencies:

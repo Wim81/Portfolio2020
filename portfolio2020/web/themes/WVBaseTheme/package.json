@@ -25,7 +25,8 @@
     "sass": "^1.24.4",
     "selectize": "^0.12.6",
     "simplelightbox": "^1.17.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "textillate": "^0.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
