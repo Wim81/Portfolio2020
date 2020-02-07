@@ -41,4 +41,8 @@
   .btn {
     margin-top: 2rem;
   }
+
+  .btn + .btn {
+    margin-top: 1rem;
+  }
 }
