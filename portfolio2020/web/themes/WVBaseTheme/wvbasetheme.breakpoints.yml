@@ -1,0 +1,32 @@
+wvbasetheme.group_topimage.mobile:
+  label: Mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+  group: wvbasetheme.group_topimage
+wvbasetheme.group_topimage.tablet:
+  label: Tablet
+  mediaQuery: '(min-width: 420px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+  group: wvbasetheme.group_topimage
+wvbasetheme.group_topimage.desktop:
+  label: Desktop
+  mediaQuery: '(min-width: 992px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+  group: wvbasetheme.group_topimage
+wvbasetheme.group_topimage.desktopxl:
+  label: DesktopXL
+  mediaQuery: '(min-width: 1600px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+  group: wvbasetheme.group_topimage
