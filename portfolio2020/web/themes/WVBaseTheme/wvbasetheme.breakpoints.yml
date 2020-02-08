@@ -5,7 +5,7 @@ wvbasetheme.group_topimage.mobile:
   multipliers:
     - 1x
     - 2x
-  group: wvbasetheme.group_topimage
+  group: 'WV Base Theme'
 wvbasetheme.group_topimage.tablet:
   label: Tablet
   mediaQuery: '(min-width: 420px)'
@@ -13,7 +13,7 @@ wvbasetheme.group_topimage.tablet:
   multipliers:
     - 1x
     - 2x
-  group: wvbasetheme.group_topimage
+  group: 'WV Base Theme'
 wvbasetheme.group_topimage.desktop:
   label: Desktop
   mediaQuery: '(min-width: 992px)'
@@ -21,7 +21,7 @@ wvbasetheme.group_topimage.desktop:
   multipliers:
     - 1x
     - 2x
-  group: wvbasetheme.group_topimage
+  group: 'WV Base Theme'
 wvbasetheme.group_topimage.desktopxl:
   label: DesktopXL
   mediaQuery: '(min-width: 1600px)'
@@ -29,4 +29,4 @@ wvbasetheme.group_topimage.desktopxl:
   multipliers:
     - 1x
     - 2x
-  group: wvbasetheme.group_topimage
+  group: 'WV Base Theme'
