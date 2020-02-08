@@ -8,9 +8,18 @@
 
   &-inner {
     height: 100%;
-    @include bg-img-bottom;
     background-color: $secondary;
-    background-blend-mode: multiply;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+      mix-blend-mode: multiply;
+    }
   }
 }
 
