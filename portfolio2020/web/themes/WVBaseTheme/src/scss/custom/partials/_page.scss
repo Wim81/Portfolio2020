@@ -4,7 +4,7 @@
   position: relative;
   height: 48.9vw;
   min-height: 300px;
-  max-height: 800px;
+  max-height: 75vh;
 
   &-inner {
     height: 100%;
@@ -19,22 +19,30 @@
   margin: 0;
   padding: 5px;
   line-height: 0.9;
-  text-shadow: 10px -10px 0 $black;
+  text-shadow: 3px -3px 0 $black;
+
+  @media (min-width: 480px) {
+    text-shadow: 4px -4px 0 $black;
+  }
+
+  @media (min-width: 1200px) {
+    text-shadow: 10px -10px 0 $black;
+  }
 
   &-container {
     margin-bottom: 2rem;
     position: relative;
-    top: -5.2rem;
+    top: -4.8rem;
     margin-bottom: -1.8rem;
 
     @media (min-width: 480px) {
-      top: -5.8rem;
+      top: -5.3rem;
       margin-bottom: -1.8rem;
     }
 
     @media (min-width: 1200px) {
-      top: -7.6rem;
-      margin-bottom: -3.6rem;
+      top: -7rem;
+      margin-bottom: -3rem;
     }
   }
 }
