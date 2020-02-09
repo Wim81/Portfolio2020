@@ -8,9 +8,32 @@
 
     &-inner {
       height: 80vh;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0 80px;
+      position: relative;
+      max-height: 175vw;
+
+      .top-image-homepage {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+
+        &-inner {
+          height: 100%;
+          position: relative;
+
+          img {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top: 0;
+            left: 40px;
+
+            @media (min-width: 420px) {
+              left: 80px;
+            }
+          }
+        }
+      }
     }
 
     &-texts {

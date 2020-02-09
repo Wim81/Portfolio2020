@@ -5,7 +5,12 @@
         <div class="frontpage-intro mb-10">
             <div class="container frontpage-intro-container">
                 <div class="row">
-                    <div class="col-12 frontpage-intro-inner"  style="background-image: url({{ content.field_main_image.0['#markup'] }})">
+                    <div class="col-12 frontpage-intro-inner">
+                        <div class="top-image-homepage">
+                            <div class="top-image-homepage-inner">
+                                {{ content.field_main_image_homepage.0 }}
+                            </div>
+                        </div>
                         <div class="container h-100 frontpage-intro-container">
                             <div class="row h-100">
                                 <div class="col-md-8 offset-md-4">
