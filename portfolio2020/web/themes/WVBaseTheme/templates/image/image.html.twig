@@ -3,5 +3,4 @@ set classes = [
     'lazyload'
 ]
 %}
-<img{{ attributes|without('src').addClass(classes) }} data-src="{{ attributes.src }}" />
-<source{{ source_attributes|without('srcset') }} data-srcset="{{ source_attributes.srcset }}"/>
+<img{{ attributes|without('src').addClass(classes) }} data-src="{{ attributes.src }}"  data-expand="200"/>

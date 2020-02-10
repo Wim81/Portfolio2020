@@ -16,7 +16,7 @@
 {% if output_image_tag %}
     {{ img_element }}
 {% else %}
-    <picture class="lazyload">
+    <picture>
         {% if sources %}
             {#
             Internet Explorer 9 doesn't recognise source elements that are wrapped in
