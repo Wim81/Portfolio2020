@@ -59,3 +59,7 @@ btn:focus {
   outline: 0;
 }
 
+/* lazy load fixes */
+.js .lazyloaded {
+  transition: transform 0.3s, opacity 0.5s;
+}
