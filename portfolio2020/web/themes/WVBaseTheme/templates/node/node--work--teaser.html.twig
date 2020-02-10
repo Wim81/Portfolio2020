@@ -5,13 +5,8 @@
     <a href="{{ url }}" class="work-teaser">
         <div class="work-teaser-inner h-100 text-center">
             <div class="work-teaser-image">
-                <div class="work-teaser-image-outer">
-                    <div class="work-teaser-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})">
-                        <div class="container h100">
-                            <div class="row h100">
-                            </div>
-                        </div>
-                    </div>
+                <div class="work-teaser-image-inner">
+                    {{ content.field_main_image.0 }}
                 </div>
             </div>
 

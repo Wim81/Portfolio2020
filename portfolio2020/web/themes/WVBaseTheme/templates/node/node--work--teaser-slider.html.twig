@@ -1,21 +1,19 @@
 <a href="{{ url }}" class="work-teaser-slider">
     <div class="work-teaser-slider-inner h-100 text-center">
         <div class="work-teaser-image">
-            <div class="work-teaser-image-outer">
-                <div class="work-teaser-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})">
-
-                    <span class="work-teaser-slider-tags">
-                        {% for key, tag in content.field_tags %}
-                            {% if key matches '/^\\d+$/' %}   {# integers only #}
-                                {% if key == '0' %}
-                                    {{ tag['#title'] }}
-                                {% else %}
-                                    / {{ tag['#title'] }}
-                                {% endif %}
+            <div class="work-teaser-image-inner">
+                {{  content.field_main_image.0 }}
+                <span class="work-teaser-slider-tags">
+                    {% for key, tag in content.field_tags %}
+                        {% if key matches '/^\\d+$/' %}   {# integers only #}
+                            {% if key == '0' %}
+                                {{ tag['#title'] }}
+                            {% else %}
+                                / {{ tag['#title'] }}
                             {% endif %}
-                        {% endfor %}
-                    </span>
-                </div>
+                        {% endif %}
+                    {% endfor %}
+                </span>
             </div>
         </div>
         <div class="container h100 work-teaser-slider-title-container">
