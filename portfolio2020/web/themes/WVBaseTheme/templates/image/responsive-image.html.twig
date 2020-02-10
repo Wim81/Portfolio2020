@@ -16,7 +16,7 @@
 {% if output_image_tag %}
     {{ img_element }}
 {% else %}
-    <picture class="lazyload" data-expand="-20">
+    <picture class="lazyload">
         {% if sources %}
             {#
             Internet Explorer 9 doesn't recognise source elements that are wrapped in
@@ -24,7 +24,7 @@
             #}
             <!--[if IE 9]><video style="display: none;"><![endif]-->
             {% for source_attributes in sources %}
-                <source{{ source_attributes }}/>
+                <source{{ source_attributes|without('srcset') }} data-srcset="{{ source_attributes.srcset }}"/>
             {% endfor %}
             <!--[if IE 9]></video><![endif]-->
         {% endif %}
