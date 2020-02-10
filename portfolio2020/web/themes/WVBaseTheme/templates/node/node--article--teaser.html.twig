@@ -4,9 +4,9 @@
             <h3 class="blog-teaser-title">{{ node.title.value }}</h3>
             <p class="blog-teaser-date">{{ node.getCreatedTime|date('d/m/Y') }}</p>
             <div class="blog-teaser-bottom">
-                <div class="blog-teaser-image-outer">
-                    <div class="blog-teaser-image-inner" style="background-image: url({{ content.field_main_image.0['#markup'] }})"></div>
-                </div>
+                    <div class="blog-teaser-image-inner">
+                        {{ content.field_main_image.0 }}
+                    </div>
                 <div class="blog-teaser-bottom-right">
                     <div class="blog-teaser-text">{{ content.field_teaser_text.0 }}</div>
                     <h3 class="blog-teaser-linktext">Read more</h3>
