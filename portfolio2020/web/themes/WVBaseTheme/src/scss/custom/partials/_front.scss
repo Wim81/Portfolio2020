@@ -5,7 +5,6 @@
     &-container {
       max-width: 1480px;
       position: relative;
-      z-index: 999999;
     }
 
     &-inner {
@@ -29,7 +28,6 @@
             position: absolute;
             top: 0;
             left: 40px;
-            z-index: 9999;
 
             @media (min-width: 420px) {
               left: 80px;

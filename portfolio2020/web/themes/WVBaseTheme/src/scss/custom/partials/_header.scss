@@ -1,6 +1,10 @@
 header {
   background-color: $header-background-color;
 
+  &.no-bg {
+    background-color: transparent;
+  }
+
   .navbar {
     padding: 0;
 

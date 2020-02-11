@@ -67,6 +67,20 @@ jQuery(document).ready( function($) {
         $(this).toggleClass("is-active");
     });
 
+    /* add no-bg class to frontpage header so header does not visually overlap frontpage main image */
+    if ( $(".frontpage").length !== 0 ) {
+        function checkFrontpageScroll() {
+            var top = $("body, html").scrollTop();
+            if (top < 250) {
+                $("header").addClass("no-bg");
+            } else {
+                $("header").removeClass("no-bg");
+            }
+        }
+        checkFrontpageScroll();
+        $(window).scroll(checkFrontpageScroll);
+    }
+
     /* add classes to eu cookie compliance banner buttons  */
     $(".eu-cookie-compliance-banner .agree-button").addClass("btn btn-primary");
     $(".eu-cookie-compliance-banner .decline-button").addClass("btn btn-primary");
