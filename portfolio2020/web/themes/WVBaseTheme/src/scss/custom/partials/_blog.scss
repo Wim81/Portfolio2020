@@ -80,6 +80,21 @@
       background-color: $secondary;
       background-blend-mode: multiply;
       overflow: hidden;
+      position: relative;
+
+      /* fallback for IE 10, 11 and Edge. */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        &:after{
+          content:'';
+          background: $secondary-50;
+          position: absolute;
+          top:0;
+          left: 0;
+          bottom:0;
+          width:100%;
+        }
+      }
+      /* end of fallback for IE 10, 11 and Edge. */
 
       @media (min-width: 992px) {
         width: auto;
@@ -133,3 +148,17 @@
     }
   }
 }
+
+/* fallback for IE 10, 11 and Edge. PT2 */
+@supports (-ms-ime-align:auto) {
+  .blog-teaser-image-inner:after{
+    content:'';
+    background: $secondary-50;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom:0;
+    width:100%;
+  }
+}
+/* end of fallback for IE 10, 11 and Edge. PT2 */
