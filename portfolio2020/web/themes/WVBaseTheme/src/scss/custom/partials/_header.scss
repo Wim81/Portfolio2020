@@ -1,7 +1,7 @@
 header {
   background-color: $header-background-color;
 
-  &.no-bg {
+  &.no-bg:not(.show) {
     background-color: transparent;
   }
 

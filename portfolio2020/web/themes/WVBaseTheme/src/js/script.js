@@ -79,6 +79,9 @@ jQuery(document).ready( function($) {
         }
         checkFrontpageScroll();
         $(window).scroll(checkFrontpageScroll);
+        $("button.hamburger").click(function() {
+            $("header").toggleClass("show");
+        });
     }
 
     /* add classes to eu cookie compliance banner buttons  */
