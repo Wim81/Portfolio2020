@@ -10,6 +10,32 @@
     height: 100%;
     background-color: $secondary;
 
+    /* fallback for IE 10, 11 and Edge. */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      &:after{
+        content:'';
+        background: $secondary-50;
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom:0;
+        width:100%;
+      }
+    }
+  }
+  @supports (-ms-ime-align:auto) {
+    div:after{
+      content:'';
+      background: $secondary-50;
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom:0;
+      width:100%;
+    }
+  }
+  /* end of fallback for IE 10, 11 and Edge. */
+
     img {
       display: block;
       width: 100%;
@@ -21,7 +47,6 @@
       mix-blend-mode: multiply;
     }
   }
-}
 
 .main-title {
   z-index: 1;
