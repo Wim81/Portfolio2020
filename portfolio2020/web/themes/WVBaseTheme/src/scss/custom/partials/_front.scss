@@ -110,6 +110,10 @@
       flex-direction: column;
       justify-content: flex-end;
       padding-bottom: 3rem;
+
+      @media (min-width: 1200px) {
+        padding-left: 5rem;
+      }
     }
   }
 }
