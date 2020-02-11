@@ -27,6 +27,7 @@
             position: absolute;
             top: 0;
             left: 40px;
+            z-index: 9999;
 
             @media (min-width: 420px) {
               left: 80px;
