@@ -137,20 +137,14 @@
 
 /* fallback for Edge. */
 @supports (-ms-accelerator:true) {
-  .blog-teaser-image-inner img {
-    opacity: 0.5;
-  }
-
-  .js .lazyloaded {
+  .blog-teaser-image-inner img,
+  .js .blog-teaser-image-inner .lazyloaded {
     opacity: 0.5;
   }
 }
 @supports (-ms-ime-align:auto) {
-  .blog-teaser-image-inner img {
-    opacity: 0.5;
-  }
-
-  .js .lazyloaded {
+  .blog-teaser-image-inner img,
+  .js .blog-teaser-image-inner .lazyloaded {
     opacity: 0.5;
   }
 }

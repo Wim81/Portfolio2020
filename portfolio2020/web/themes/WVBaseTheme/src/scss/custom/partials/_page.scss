@@ -85,12 +85,14 @@
 
 /* fallback for Edge. */
 @supports (-ms-accelerator:true) {
-  .top-image-inner img {
+  .top-image-inner img,
+  .js .top-image-inner .lazyloaded {
     opacity: 0.5;
   }
 }
 @supports (-ms-ime-align:auto) {
-  .work-teaser-image-inner img {
+  .work-teaser-image-inner img,
+  .js .top-image-inner .lazyloaded {
     opacity: 0.5;
   }
 }
