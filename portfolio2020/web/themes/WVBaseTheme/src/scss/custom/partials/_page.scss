@@ -10,20 +10,6 @@
     height: 100%;
     background-color: $secondary;
 
-    /* fallback for IE 10, 11 and Edge. */
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      &:after{
-        content:'';
-        background: $secondary-50;
-        position: absolute;
-        top:0;
-        left: 0;
-        bottom:0;
-        width:100%;
-      }
-    }
-  /* end of fallback for IE 10, 11 and Edge. */
-
     img {
       display: block;
       width: 100%;
@@ -97,16 +83,15 @@
   }
 }
 
-/* fallback for IE 10, 11 and Edge. PT2 */
-@supports (-ms-ime-align:auto) {
-  .top-image-inner:after{
-    content:'';
-    background: $secondary-50;
-    position: absolute;
-    top:0;
-    left: 0;
-    bottom:0;
-    width:100%;
+/* fallback for Edge. */
+@supports (-ms-accelerator:true) {
+  .top-image-inner img {
+    opacity: 0.5;
   }
 }
-/* end of fallback for IE 10, 11 and Edge. PT2 */
+@supports (-ms-ime-align:auto) {
+  .work-teaser-image-inner img {
+    opacity: 0.5;
+  }
+}
+/* end of fallback Edge. */
