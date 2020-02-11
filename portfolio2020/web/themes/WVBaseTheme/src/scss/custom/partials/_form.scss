@@ -48,6 +48,30 @@
     }
   }
 
+  /* copy for Firefox, the autofill tags prevent the previous rule from working there */
+  &-input {
+    width: 100%;
+    margin-top: 0;
+    color: $primary;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $primary;
+
+    &-text {
+
+    }
+
+    &-email {
+
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $secondary;
+    }
+  }
+  /* end of Firefox copy */
+
   &-input-textarea {
     resize: none;
   }
